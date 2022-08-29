@@ -1,3 +1,1 @@
-## Nícolas Arths
-
-Repository for my personal website.
+Personal website created with framework NextJS.

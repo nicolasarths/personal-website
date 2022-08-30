@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+
+  max-width: 500px;
+}
+
+.form-title {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.form label {
+  margin-top: 10px;
+}
+
+.form-input {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  margin-bottom: 10px;
+  border: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+input:-internal-autofill-selected {
+    background-color: black !important;
+}
+
+.form-submit {
+  font-weight: 700;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  background-color: inherit;
+}
+
+.form-submit:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .form-container {
+    width: 90%;
+    max-width: 500px;
+  }
+}

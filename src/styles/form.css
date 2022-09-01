@@ -26,12 +26,9 @@
   border: none;
 }
 
-::placeholder {
-  color: white;
-}
-
-input:-internal-autofill-selected {
-    background-color: black !important;
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
 }
 
 .form-submit {
@@ -49,9 +46,6 @@ input:-internal-autofill-selected {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
-  .form-container {
-    width: 90%;
-    max-width: 500px;
-  }
+@media only screen and (max-width: 800px) {
+
 }

@@ -1,13 +1,16 @@
 :root {
-  --background-color: rgb(76, 87, 104);
+  --background-color: rgb(0, 3, 27);
+
+  --main-color: rgb(255, 0, 195);
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--background-color);
+  color: rgb(234, 178, 178);
 }
 
 a {
@@ -16,17 +19,100 @@ a {
 }
 
 * {
-    font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+label:hover {
+  cursor: inherit;
+}
+
+.next-image {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.container {
+  margin: auto;
+  width: clamp(90%, 80%, 80%);
+  max-width: 1200px;
+}
+
+.h3 {
+  text-transform: uppercase;
+  font-size: clamp(.8rem, 4vw, 1.3rem);
+  letter-spacing: .1rem;
+}
+
+.hide {
+  display: none;
+}
+
+
+/* FLEX */
+.flex {display: flex;}
+.wrap {flex-wrap: wrap;}
+.nowrap{flex-wrap: nowrap;}
+
+.gap {gap: 10px}
+
+flex-column{ flex-direction: column;}
+flex-row{ flex-direction: row;}
+
+.flex-center{justify-content: center;}
+.flex-between{justify-content:space-between;}
+.flex-around{justify-content: space-around;}
+.flex-evenly{justify-content: space-evenly;}
+
+.block {
+  display: block;
+}
+
+/* POSITION */
+.absolute {position: absolute;}
+.relative {position: relative;}
+
+.right {right:0}
+.left {left:0}
+.top{top:0}
+.bottom{bottom:0}
+
+.text-center { text-align: center;}
+.text-left { text-align: left;}
+.text-right { text-align: right;}
+.text-justify { text-align: justify;}
+
+.title {
+  font-family: "Playfair Display", serif;
+}
+
+.debug-border {
+  border: 2px red solid;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hide-extra {
+    display: none;
   }
-  body {
-    color: white;
-    background: black;
+}
+
+@media only screen and (max-width: 750px) {
+  .hide-big {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hide-medium {
+    display: none;
   }
 }

@@ -1,5 +1,87 @@
-.title { font-family: 'Playfair Display', serif; }
+.main-left-section {
+  width: 3fr;
+}
 
 .main-title {
-    font-size: 4rem;
+  margin-top: 40px;
+
+  font-size: clamp(1.5rem, 10vw, 6rem);
+  text-transform: uppercase;
+}
+
+.main-subtitle {
+  font-size: clamp(.9rem, 4vw, 2rem)
+}
+
+.project-title {
+  min-width: 30vw; 
+}
+
+.project-gallery-item {
+  background-color:  rgb(246, 76, 147);
+  box-shadow: rgb(255, 191, 252) -20px -20px 90px 1px inset;
+  height: 230px;
+  width: 230px;
+  border: rgb(255, 124, 200) solid;
+}
+
+.project-gallery-item-coming-up {
+  position: absolute;
+  width: 100%;
+  top: 42%;
+  bottom: 42%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: black;
+  background-color: rgb(254, 202, 202, 0.4);
+}
+
+.cover {
+  background: url('../../public/profile-picture.jpg');
+  background-size: 220%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  
+  display: inline-block;
+  position: relative;
+  top: 0;
+  right: 0;
+
+  width: clamp(100px, 30vw, 400px);
+  height: 800px;
+}
+
+.show-form-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .main-left-section {
+    width: 100%;
+  }
+
+  .main-right-section {
+    display: none;
+  }
+
+  .project-gallery {
+    align-self: center;
+    max-width: 900px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .project-gallery-item{
+    width: 90vw;
+    height: 70vw;
+  }
+  .project-gallery-item img{
+    object-fit: contain;
+  }
+  
 }

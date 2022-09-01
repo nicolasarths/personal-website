@@ -1,6 +1,25 @@
 {
   "name": "nicolasarths",
   "version": "0.1.0",
+  "author": {
+    "name": "Nícolas Arths.",
+    "url": "https://www.nicolasarths.com.br",
+    "username": "nicolasarths",
+    "alias": "nicolasarths"
+  },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/nicolasarths/nicolasarths"
+  },
+  "bugs": "https://github.com/nicolasarths/nicolasarths/issues",
+  "license": "MIT",
+  "keywords": [
+    "personal website",
+    "nextjs",
+    "blog",
+    "portfolio"
+  ],
+  "homepage": "https://www.nicolasarths.com.br",
   "private": true,
   "scripts": {
     "dev": "next dev",

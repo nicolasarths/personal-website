@@ -1,8 +1,12 @@
 import UnderConstruction from "../components/UnderConstruction";
 
-export default UnderConstruction;
+export default function Contato() {
+  return (<>
+    <UnderConstruction title="contato"/>
+  </>)
+}
 
-function Contato () {
+function fContato() {
   return (
     <form className="form" id="send-message" method="post" action="">
       <h2 className="form-title">Entre em contato</h2>

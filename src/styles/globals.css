@@ -1,7 +1,13 @@
 :root {
   --background-color: rgb(0, 3, 27);
-
   --main-color: rgb(255, 0, 195);
+  --highlight: rgb(12, 170, 88);
+}
+
+/* COLORS */
+
+.highlight {
+  color: var(--highlight);
 }
 
 html,

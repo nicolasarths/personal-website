@@ -25,6 +25,10 @@
   border: rgb(255, 124, 200) solid;
 }
 
+.project-gallery-item:hover {
+  cursor: pointer;
+}
+
 .project-gallery-item-coming-up {
   position: absolute;
   width: 100%;

@@ -5,6 +5,7 @@ import projects from "../data/general.json";
 export default function ProjectGallery() {
     function BuildGallery(){
         return projects.map((project, i) => {
+            function Gallery(){
             const originalCaptionClass = "project-gallery-item-caption";
             const originalItemClasses = "next-image project-gallery-item relative";
 
@@ -38,7 +39,9 @@ export default function ProjectGallery() {
                   alt={project.alt ? project.alt : ""}
                   layout="fill"
                 />
-              </div>)})
+              </div>)}
+              return Gallery()
+              })
     }
 
     return (

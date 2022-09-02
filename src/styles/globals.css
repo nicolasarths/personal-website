@@ -1,6 +1,7 @@
 :root {
   --background-color: rgb(0, 3, 27);
   --main-color: rgb(255, 0, 195);
+  --secondary-color: rgb(255, 203, 234);
   --highlight: rgb(12, 170, 88);
 }
 
@@ -16,7 +17,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: var(--background-color);
-  color: rgb(234, 178, 178);
+  color: var(--secondary-color);
 }
 
 a {

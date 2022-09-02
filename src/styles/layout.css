@@ -21,7 +21,7 @@
 }
 
 .menu-option:hover {
-  color: var(--primary-red);
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -46,6 +46,9 @@
 
 .footer-credits-a {
   color: var(--main-color);
+  letter-spacing: .1rem;
+  z-index: 100;
+  font-weight: 600;
 }
 
 .span-glow {

@@ -24,6 +24,8 @@
   padding: 0.5em;
   margin-bottom: 10px;
   border: none;
+  resize: none;
+
 }
 
 input:-webkit-autofill,

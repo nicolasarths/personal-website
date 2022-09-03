@@ -35,9 +35,7 @@ export default function Layout({ children }) {
           </div>
         </Link>
       </div>
-      <div className="container">
-        {children}
-      </div>
+      {children}
       <footer className="footer">
         <span className="footer-rights">Nícolas Arths.</span>
         <span className="footer-credits">

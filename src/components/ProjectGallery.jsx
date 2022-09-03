@@ -6,19 +6,22 @@ export default function ProjectGallery() {
     function BuildGallery(){
         return projects.map((project, i) => {
             function Gallery(){
-            const originalCaptionClass = "project-gallery-item-caption";
-            const originalItemClasses = "next-image project-gallery-item relative";
+            const originalCaptionClass = "main-project-gallery-item-caption";
+            const originalItemClasses = "next-image main-project-gallery-item relative";
 
             let [classes, toggleClasses] = useState(originalItemClasses);
             let [descriptionClasses, toggleDescriptionClasses] = useState(originalCaptionClass + " hide");
         
             function handleEnter() {
-              toggleDescriptionClasses("project-gallery-item-caption absolute");
+              toggleDescriptionClasses("main-project-gallery-item-caption absolute");
               toggleClasses(`${originalItemClasses} scale-up`);
             }
             function handleLeave() {
-              toggleDescriptionClasses("project-gallery-item-caption hide");
+              toggleDescriptionClasses("main-project-gallery-item-caption hide");
               toggleClasses(`${originalItemClasses} scale-down`);
+            }
+            function handleClick() {
+              project.localHref ? location.href = project.localHref : ''
             }
         
             return (
@@ -27,13 +30,14 @@ export default function ProjectGallery() {
                 className={classes}
                 onMouseEnter={handleEnter}
                 onMouseLeave={handleLeave}
+                onClick={handleClick}
               >
                 {project.src ? (
                   <span className={descriptionClasses}>Clique para mais detalhes</span>
                 ) : (
                   ""
                 )}
-                <span className="project-gallery-item-coming-up">Em breve...</span>
+                <span className="main-project-gallery-item-coming-up">Em breve...</span>
                 <Image
                   src={project.src ? project.src : ""}
                   alt={project.alt ? project.alt : ""}
@@ -45,7 +49,7 @@ export default function ProjectGallery() {
     }
 
     return (
-    <div className="project-gallery flex wrap gap flex-center">
+    <div className="main-project-gallery flex wrap gap flex-center">
         {BuildGallery()}
     </div>)
 }

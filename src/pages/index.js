@@ -9,8 +9,8 @@ export default function Home() {
           Desenvolvedor júnior, poeta, enxadrista
         </h2>
 
-        <div className="projects-container flex flex-center wrap">
-          <h3 className="project-title title h3">Meus projetos</h3>
+        <div className="main-projects-container flex flex-center wrap">
+          <h3 className="main-project-title title h3">Meus projetos</h3>
           <ProjectGallery/>
         </div>
       </div>

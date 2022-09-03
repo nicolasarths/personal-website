@@ -1,5 +1,6 @@
 .glow { animation: glow 12s infinite}
 .scale-up { animation: scale-up 50ms forwards}
+.scale-up-big { animation: scale-up-big 1s forwards}
 
 @keyframes glow {
     0% {
@@ -29,10 +30,20 @@
 
   @keyframes scale-up {
     0%{
-      z-index: 1;
+      z-index: 2;
     }
     100% {
       scale: 105%;
-      z-index: 1;
+      z-index: 2;
+    }
+  }
+
+  @keyframes scale-up-big {
+    0% {
+      z-index: 2;
+    }
+    100% {
+      scale:120%;
+      z-index: 2;
     }
   }

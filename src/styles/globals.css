@@ -3,6 +3,7 @@
   --main-color: rgb(255, 0, 195);
   --secondary-color: rgb(255, 203, 234);
   --highlight: rgb(12, 170, 88);
+  --weak-highlight: rgb(115, 239, 175);
 }
 
 /* COLORS */
@@ -46,6 +47,8 @@ label:hover {
   max-width: 1200px;
 }
 
+.full-width { width: 100% }
+
 .h3 {
   text-transform: uppercase;
   font-size: clamp(.8rem, 4vw, 1.3rem);
@@ -63,14 +66,19 @@ label:hover {
 .nowrap{flex-wrap: nowrap;}
 
 .gap {gap: 10px}
+.gap-medium {gap: 50px}
+.gap-big {gap: 100px}
 
-flex-column{ flex-direction: column;}
-flex-row{ flex-direction: row;}
+.flex-column{ flex-direction: column;}
+.flex-row{ flex-direction: row;}
 
 .flex-center{justify-content: center;}
 .flex-between{justify-content:space-between;}
 .flex-around{justify-content: space-around;}
 .flex-evenly{justify-content: space-evenly;}
+
+.align-center{align-items: center;}
+.align-right{align-items:flex-end;}
 
 .block {
   display: block;
@@ -98,12 +106,22 @@ flex-row{ flex-direction: row;}
   border: 2px red solid;
 }
 
+.margin { margin: 10px }
+.margin-y { margin-top: 10px; margin-bottom: 10px }
+.margin-x { margin-left: 10px; margin-right: 10px }
+.margin-auto { margin: auto }
+
 .no-margin {
   margin: 0;
 }
 
 .no-padding {
   padding: 0;
+}
+
+.no-decoration{
+  list-style: none;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1200px) {

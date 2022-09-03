@@ -7,6 +7,7 @@ import '../styles/form.css'
 import '../styles/layout.css'
 import '../styles/animations.css'
 import '../styles/under-construction.css'
+import '../styles/projects.css'
 
 function MyApp({ Component, pageProps }) {
   return (

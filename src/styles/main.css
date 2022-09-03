@@ -1,5 +1,6 @@
 .main-left-section {
   width: 3fr;
+  padding: 0 clamp(1px, 9vw, 300px);
 }
 
 .main-title {
@@ -13,38 +14,38 @@
   font-size: clamp(.9rem, 4vw, 2rem)
 }
 
-.project-title {
+.main-project-title {
   min-width: 30vw; 
 }
 
-.project-gallery-item {
+.main-project-gallery-item {
   background-color:  rgb(255, 133, 184);
   box-shadow: rgb(255, 191, 252) -20px -20px 90px 1px inset;
   height: 230px;
-  width: 230px;
+  width: clamp(230px, 18vw, 500px);
   border: rgb(255, 124, 200) solid;
 }
 
-.project-gallery-item img {
+.main-project-gallery-item img {
   object-fit: cover;
 }
 
-.project-gallery-item:hover {
+.main-project-gallery-item:hover {
   cursor: pointer;
 }
 
-.project-gallery-item-caption {
+.main-project-gallery-item-caption {
   z-index: 1;
   left: 0;
   bottom: 0;
   width: 100%;
-padding: 3px;
+  padding: 3px;
   font-weight: 600;
   color: white;
   background-color:var(--highlight);
 }
 
-.project-gallery-item-coming-up {
+.main-project-gallery-item-coming-up {
   position: absolute;
   width: 100%;
   top: 42%;
@@ -82,6 +83,11 @@ padding: 3px;
 
 @media only screen and (max-width: 1300px) {
   .main-left-section {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .main-left-section {
     width: 100%;
   }
 
@@ -89,17 +95,17 @@ padding: 3px;
     display: none;
   }
 
-  .project-gallery {
+  .main-project-gallery {
     align-self: center;
     max-width: 900px;
   }
 }
 @media only screen and (max-width: 800px) {
-  .project-gallery-item{
+  .main-project-gallery-item{
     width: 90vw;
     height: 70vw;
   }
-  .project-gallery-item img{
+  .main-project-gallery-item img{
     object-fit: contain;
   }
   

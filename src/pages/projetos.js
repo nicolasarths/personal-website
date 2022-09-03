@@ -34,7 +34,7 @@ export default function Projetos() {
                       <Link href={project.href}>Acessar</Link>
                     </li>
                     <li>
-                      <Link href="#">Avaliar</Link>
+                      <Link href="/contato">Avaliar</Link>
                     </li>
                     <li>
                         <Link href={project.github}>Repositório no Github</Link>

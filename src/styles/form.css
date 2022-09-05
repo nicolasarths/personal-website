@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column wrap;
   gap: 10px;
-
   max-width: 500px;
 }
 
@@ -25,7 +24,7 @@
   margin-bottom: 10px;
   border: none;
   resize: none;
-
+  max-width: 100%;
 }
 
 input:-webkit-autofill,
@@ -48,6 +47,8 @@ input:-webkit-autofill:focus {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
-
+@media only screen and (max-width: 600px) {
+  .form{
+    margin: 0 30px;
+  }
 }

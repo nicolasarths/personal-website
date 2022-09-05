@@ -1,47 +1,56 @@
 import { useState } from "react";
 
 export default function Contato() {
-  const [feedbackOptions, toggleFeedbackOptions] = useState();
-  const [budgetOptions, toggleBudgetOptions] = useState("hide");
-  const [recruitOptions, toggleRecruitOptions] = useState("hide");
+  const [CurrentField, changeCurrentField] = useState(FeedbackSelect);
 
   function HandleSelect(e) {
-    toggleFeedbackOptions("hide");
-    toggleBudgetOptions("hide");
-    toggleRecruitOptions("hide");
     if (e.target.value == "feedback") {
-      toggleFeedbackOptions();
+      changeCurrentField(FeedbackSelect);
     }
     if (e.target.value == "budget") {
-      toggleBudgetOptions();
+      changeCurrentField(BudgetSelect);
     }
-    if (e.target.value == "recruit") {
-      toggleRecruitOptions();
+    if (e.target.value == "recruitment") {
+      changeCurrentField(RecruitSelect);
     }
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const formData = {}
+    Array.from(e.currentTarget.elements).forEach(field => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+  
+    fetch('/api/mail', {
+      method: 'post',
+      body: JSON.stringify(formData)
+    })
   }
 
   function FeedbackSelect() {
     return (
       <>
-        <label
-          form="send-message"
-          htmlFor="feedback"
-          className={feedbackOptions}
-        >
+        <label form="send-message" htmlFor="project">
           Feedback para
         </label>
         <select
-          id="feedback"
-          name="feedback"
-          className={`form-input ${feedbackOptions}`}
+          id="project"
+          name="project"
+          className="form-input"
           form="send-message"
           required
         >
-          <option value="nicolasarths">Website Nicolas Arths</option>
-          <option value="guinchodemoto">
+          <option value="nicolasarths.com.br">
+            Website Nicolas Arths
+          </option>
+          <option value="guinchodemoto.com">
             Website Monteiro Guincho de Moto
           </option>
-          <option value="other">Outros</option>
+          <option value="other">
+            Outros
+          </option>
         </select>
       </>
     );
@@ -50,18 +59,18 @@ export default function Contato() {
   function BudgetSelect() {
     return (
       <>
-        <label form="send-message" htmlFor="budget" className={budgetOptions}>
-          Feedback para
+        <label form="send-message" htmlFor="budget-for">
+          Orçamento para
         </label>
         <select
-          id="budget"
-          name="budget"
-          className={`form-input ${budgetOptions}`}
+          id="budget-for"
+          name="budget-for"
+          className="form-input"
           form="send-message"
           required
         >
           <option value="website">Construção de website</option>
-          <option value="page">Construção de uma única página</option>
+          <option value="single-page">Construção de uma única página</option>
           <option value="other">Outros</option>
         </select>
       </>
@@ -71,35 +80,30 @@ export default function Contato() {
   function RecruitSelect() {
     return (
       <>
-        <label form="send-message" htmlFor="recruit" className={recruitOptions}>
+        <label form="send-message" htmlFor="recruiter-intention">
           Feedback para
         </label>
         <select
-          id="recruit"
-          name="recruit"
-          className={`form-input ${recruitOptions}`}
+          id="recruiter-intention"
+          name="recruiter-intention"
+          className="form-input"
           form="send-message"
           required
         >
-          <option value="email">Trocar e-mails</option>
-          <option value="schedule">Agendar conversa</option>
+          <option value="exchange-emails">Trocar e-mails</option>
+          <option value="schedule-conversation">Agendar conversa</option>
           <option value="other">Outros</option>
         </select>
 
-        <label
-          form="send-message"
-          htmlFor="enterprise"
-          className={recruitOptions}
-        >
+        <label form="send-message" htmlFor="enterprise">
           Empresa (opcional)
         </label>
         <input
           id="enterprise"
           name="enterprise"
-          className={`form-input ${recruitOptions}`}
+          className="form-input"
           type="text"
           placeholder="Nome da empresa"
-          required
         />
       </>
     );
@@ -111,11 +115,11 @@ export default function Contato() {
       name="send-message"
       id="send-message"
       method="post"
-      action=""
+      onSubmit={handleSubmit}
     >
       <h2 className="form-title">Entre em contato</h2>
 
-      <label form="send-message" htmlFor="subject">
+      <label form="send-message" htmlFor="Subject">
         Assunto
       </label>
       <select
@@ -129,15 +133,11 @@ export default function Contato() {
       >
         <option value="feedback">Feedback</option>
         <option value="budget">Orçamento</option>
-        <option value="recruit">Recrutamento</option>
+        <option value="recruitment">Recrutamento</option>
         <option value="other">Outros</option>
       </select>
 
-      <FeedbackSelect />
-
-      <BudgetSelect />
-
-      <RecruitSelect />
+      {CurrentField}
 
       <label form="send-message" htmlFor="name">
         Nome
@@ -163,12 +163,12 @@ export default function Contato() {
         required
       />
 
-      <label form="send-message" htmlFor="mensagem">
-        Mensagem*
+      <label form="send-message" htmlFor="message">
+        Mensagem
       </label>
       <textarea
-        id="mensagem"
-        name="mensagem"
+        id="message"
+        name="message"
         className="form-input"
         rows="5"
         placeholder=""

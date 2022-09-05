@@ -17,9 +17,6 @@ export default function Projetos() {
           function HandleLeave() {
             toggleClasses(originalClasses + " scale-down");
           }
-          function HandleClick() {
-            location.href= project.href
-          }
           return (
             <>
               <div
@@ -58,7 +55,6 @@ export default function Projetos() {
                     className={classes}
                     onMouseEnter={HandleEnter}
                     onMouseLeave={HandleLeave}
-                    onClick={HandleClick}
                   >
                     <Image src={project.src} alt={project.alt} layout="fill" />
                   </div>

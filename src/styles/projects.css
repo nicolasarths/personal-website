@@ -11,7 +11,7 @@
 }
 
 .project-left{
-  width: 800px;
+  max-width: 800px;
 }
 
 .project-title {

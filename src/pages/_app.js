@@ -8,6 +8,7 @@ import '../styles/layout.css'
 import '../styles/animations.css'
 import '../styles/under-construction.css'
 import '../styles/projects.css'
+import '../styles/task-dealer.css'
 
 function MyApp({ Component, pageProps }) {
   return (

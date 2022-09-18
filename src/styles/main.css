@@ -28,6 +28,7 @@
 
 .main-project-gallery-item img {
   object-fit: cover;
+  object-position: top;
 }
 
 .main-project-gallery-item:hover {
@@ -104,9 +105,6 @@
   .main-project-gallery-item{
     width: 90vw;
     height: 70vw;
-  }
-  .main-project-gallery-item img{
-    object-fit: contain;
   }
   
 }

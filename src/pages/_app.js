@@ -10,6 +10,9 @@ import '../styles/under-construction.css'
 import '../styles/projects.css'
 import '../styles/task-dealer.css'
 
+import '../styles/components/Button.css'
+import '../styles/components/Disclaimer.css'
+
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>

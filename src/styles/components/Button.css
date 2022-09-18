@@ -1,0 +1,17 @@
+.button{
+    width: 80%;
+    background-color: var(--button-color);
+
+    border: none;
+    border-radius: 10px;
+    margin: 4px;
+    padding: 8px;
+    
+    color: var(--secondary-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,4 @@
+.disclaimer {
+    background-color: var(--background-soft);
+    width: clamp(280px, 60vw, 1200px);
+}

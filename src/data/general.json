@@ -1,5 +1,7 @@
 [
   {
+    "title": "Website de Serviços de Guincho de Moto",
+    "id": "monteiro",
     "localHref": "/projetos/#monteiro",
     "href": "https://guinchodemoto.com",
     "src": "/projetos/Monteiro.png",
@@ -15,7 +17,21 @@
     ],
     "github": "https://github.com/nicolasarths/monteiro"
   },
-  {},
+  {
+    "title": "Organo - Projeto React da Alura",
+    "id": "organo",
+    "localHref": "/projetos/#organo",
+    "href": "https://organo-bice.vercel.app/",
+    "src": "/projetos/organo.png",
+    "description": "Projeto desenvolvido junto ao curso de React da alura.",
+    "alt": "projeto organo do curso de react da alura cursos online, website de organização de cards, que são imagens de pessoas com descrições, tudo isso separado em times",
+    "features": [
+      "100% responsivo",
+      "Criação de cards",
+      "Design"
+    ],
+    "github": "https://github.com/nicolasarths/organo"
+  },
   {},
   {},
   {},

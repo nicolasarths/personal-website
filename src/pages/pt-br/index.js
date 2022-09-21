@@ -22,14 +22,13 @@ export default function Home() {
 
   //<Spacer height="200px" />
   return (
-    <div className="main fade-in">
-      <div className="main-right-side">
+    <div className="main">
+      <div className="main-left-side">
         <MainHeader />
         <Description />
         <MenuOfButtons options={options} />
       </div>
       <Cover
-        className="fade-in antman delay-200"
         src="/profile-picture.jpg"
         fit="cover"
         position="50%"

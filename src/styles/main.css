@@ -10,9 +10,16 @@
   overflow: hidden;
 }
 
-.main-right-side {
+.main-left-side {
   max-width: 900px;
   padding: 0 clamp(10px, 9vw, 200px);
+
+  animation: fade-in 2s forwards;
+}
+
+.main .cover {
+  opacity: 0;
+  animation: fade-in 2s 350ms forwards;
 }
 
 .main-title {
@@ -46,6 +53,11 @@
     width: 100%;
   }
 
+  .main-left-side {
+    opacity: 0;
+    animation: fade-in 2s 350ms forwards;
+  }
+
   .main .cover {
     order: -1;
     width: 700px;
@@ -59,7 +71,6 @@
     background-repeat: no-repeat;
 
     animation: fade-in 2s forwards;
-    scale: 100%;
   }
 
   .main .cover span,

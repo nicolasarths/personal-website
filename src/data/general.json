@@ -1,8 +1,8 @@
 [
   {
-    "title": "Website de Serviços de Guincho de Moto",
+    "title": "MONTEIRO",
     "id": "monteiro",
-    "localHref": "/projetos/#monteiro",
+    "localHref": "#monteiro",
     "href": "https://guinchodemoto.com",
     "src": "/projetos/Monteiro.png",
     "description": "Website comercial construído para a empresa Monteiro Guincho de Motos.",
@@ -18,9 +18,9 @@
     "github": "https://github.com/nicolasarths/monteiro"
   },
   {
-    "title": "Organo - Projeto React da Alura",
+    "title": "ORGANO",
     "id": "organo",
-    "localHref": "/projetos/#organo",
+    "localHref": "#organo",
     "href": "https://organo-bice.vercel.app/",
     "src": "/projetos/organo.png",
     "description": "Projeto desenvolvido junto ao curso de React da alura.",

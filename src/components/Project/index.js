@@ -1,5 +1,6 @@
-import NextImage from "../../components/NextImage";
-import Option from "../Option";
+import ImageFrame from "../ImageFrame";
+import MenuOfButtons from "../MenuOfButtons";
+import Separator from "../Separator";
 
 const Project = ({ project }) => {
   const options = [
@@ -19,38 +20,42 @@ const Project = ({ project }) => {
 
   return (
     <>
-      <div
-        id={project.id}
-        className="project flex flex-center align-center gap-big"
-      >
-        <div className="project-left">
-          <h2 className="title project-title no-margin">{project.title}</h2>
-          <div className="project-links flex align-center no-decoration margin-y gap-medium">
-            {options.map((option) => (
-              <Option key={option.text} option={option} />
+      <div className="project">
+        <div className="project-left fade-in delay-200">
+          <h2 id={project.id} className="project-title no-margin">
+            {project.title}
+          </h2>
+          <p>{project.description}</p>
+          <MenuOfButtons options={options} />
+          <h4>
+            <strong>Features:</strong>
+          </h4>
+
+          <div className="full-width">
+            {project.features.map((feature, key) => (
+              <li key={key} className="margin-y">
+                {feature}
+              </li>
             ))}
-          </div>
-          <div className="padding">
-            <p className="no-margin">{project.description}</p>
-            <p className="no-margin">
-              <strong>Features:</strong>
-            </p>
-            <div className="full-width">
-              {project.features.map((feature, key) => (
-                <li key={key} className="margin-y">
-                  {feature}
-                </li>
-              ))}
-            </div>
           </div>
         </div>
 
         <div className="project-right">
-          <div className="project-image flex align-center flex-center">
-            <NextImage src={project.src} alt={project.alt} />
-          </div>
+          <ImageFrame
+            className="fade-in delay-400"
+            style={{
+              backgroundColor: "rgba(20, 0, 80, 0.5)",
+              marginTop: "32px",
+              marginBottom: "32px",
+              width: "clamp(100px, 500px, 100%)",
+              height: "clamp(100px, 1000px, 30vw)",
+            }}
+            src={project.src}
+            alt={project.alt}
+          />
         </div>
       </div>
+      <Separator color="white" height="100px" width="80vw" />
     </>
   );
 };

@@ -1,0 +1,38 @@
+@import 'fade-in.css';
+@import 'scale-ups.css';
+@import 'glow.css';
+@import 'transforms.css';
+
+.forwards { animation-fill-mode: forwards }
+
+.duration-500 { animation-duration: 500ms }
+.duration-1 { animation-duration: 1s }
+.duration-2 { animation-duration: 2s }
+.duration-3 { animation-duration: 3s }
+.duration-4 { animation-duration: 4s }
+.duration-5 { animation-duration: 5s }
+.duration-6 { animation-duration: 6s }
+.duration-7 { animation-duration: 7s }
+.duration-8 { animation-duration: 8s }
+.duration-9 { animation-duration: 9s }
+.duration-10 { animation-duration: 10s }
+
+.delay-100 { animation-delay: 100ms }
+.delay-200 { animation-delay: 200ms }
+.delay-300 { animation-delay: 300ms }
+.delay-400 { animation-delay: 400ms }
+.delay-500 { animation-delay: 500ms }
+.delay-600 { animation-delay: 600ms }
+.delay-700 { animation-delay: 700ms }
+.delay-800 { animation-delay: 800ms }
+.delay-900 { animation-delay: 900ms }
+.delay-1 { animation-delay: 1s }
+.delay-1-5 { animation-delay: 1.5s }
+.delay-2 { animation-delay: 2s }
+.delay-2-5 { animation-delay: 2.5s }
+.delay-3 { animation-delay: 3s }
+.delay-3-5 { animation-delay: 3.5s }
+.delay-4 { animation-delay: 4s }
+.delay-4-5 { animation-delay: 4.5s }
+.delay-5 { animation-delay: 5s }
+.delay-5-5 { animation-delay: 5.5s }

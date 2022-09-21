@@ -1,0 +1,26 @@
+.scale-up {
+  animation: scale-up 50ms forwards;
+}
+
+@keyframes scale-up {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    scale: 105%;
+    z-index: 2;
+  }
+}
+
+.scale-up-big {
+  animation: scale-up-big 1s forwards;
+}
+@keyframes scale-up-big {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    scale: 120%;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,16 @@
+.from-the-right {
+    animation: from-the-right 500ms forwards;
+}
+
+@keyframes from-the-right {
+    0% {
+        scale: 40%;
+        opacity: 0;
+        position: relative;
+        right: -30%;
+    }
+    100% {
+        right: 0;
+        scale: 100%;
+    }
+}

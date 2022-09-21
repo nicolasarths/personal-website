@@ -1,0 +1,25 @@
+.fade-in { 
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+    100% { opacity: 100% }
+}
+
+.fade-in-scaling-up {
+    scale: 0;
+    opacity: 0;
+    animation: fade-in-scaling-up 500ms forwards;
+}
+
+@keyframes fade-in-scaling-up {
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+    100% {
+        scale: 100%;
+        opacity: 100%;
+    }
+}

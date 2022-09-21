@@ -1,15 +1,9 @@
-import serverProjects from "../../data/general.json";
+import projects from "../../data/general.json";
 
 import Project from "../../components/Project";
 import Disclaimer from "../../components/Disclaimer";
 
-export async function getServerSideProps(context) {
-  return {
-    props: { projects: serverProjects },
-  };
-}
-
-export default function Projetos({ projects }) {
+export default function Projetos() {
   return (
     <>
       <div className="flex flex-center align-center flex-column text-center padding">
@@ -18,7 +12,7 @@ export default function Projetos({ projects }) {
           <span className="projects-page-title-pedestal"></span>
         </div>
 
-        {projects.map((project, i) => {
+        {projects.map((project) => {
           if (project.src)
             return <Project key={project.id} project={project} />;
         })}

@@ -12,7 +12,7 @@ export default function Home() {
     },
     {
       href: "https://nicolasarths.wordpress.com/",
-      text: "Poesia",
+      text: "Blog de poesias",
     },
     {
       href: "https://www.chess.com/member/nicolasarths",
@@ -20,16 +20,16 @@ export default function Home() {
     },
   ];
 
+  //<Spacer height="200px" />
   return (
     <div className="main fade-in">
       <div className="main-right-side">
         <MainHeader />
         <Description />
         <MenuOfButtons options={options} />
-        <Spacer height="200px" />
       </div>
       <Cover
-        className="from-the-right ant-man delay-200"
+        className="fade-in antman delay-200"
         src="/profile-picture.jpg"
         fit="cover"
         position="50%"

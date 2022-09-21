@@ -7,9 +7,7 @@ const ImageFrame = ({ src, alt, style, className }) => {
 
   return (
     <div className={`image-frame ${className}`} style={style}>
-      <span className="image-frame-image">
         <Image src={src} alt={alt} layout="fill" />
-      </span>
     </div>
   );
 };

@@ -35,16 +35,6 @@
   font-size: clamp(1.3rem, 5vw, 2rem);
 }
 
-.project-links {
-  justify-content: center;
-  color: var(--highlight);
-  font-weight: 600;
-}
-
-.project-links li:hover {
-  color: var(--weak-highlight);
-}
-
 .project-image {
   background-color: rgb(255, 0, 217, 0.08);
   margin: 10px;
@@ -64,17 +54,18 @@
     align-items: center;
     gap: 0;
   }
+
+  .project .button{
+    max-width: 120px;
+    margin: 10px;
+  }
+  
   .project-right,
   .project-left{
     width: 90vw;
   }
   .project-right {
     order: -1;
-  }
-
-  .project-links {
-    justify-content: center;
-    width: 100%;
   }
 }
 

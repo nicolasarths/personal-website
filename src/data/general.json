@@ -8,12 +8,12 @@
     "description": "Website comercial construído para a empresa Monteiro Guincho de Motos.",
     "alt": "Website desenvolvido para Monteiro Mototransporte 100% responsivo, com barra de menus fixa, capa acima do menu que desaparece quando o usuário desce a tela e também amigável para leitores de tela.",
     "features": [
-      "Menu sempre visível",
-      "Botão flutuante para whatsapp em telas pequenas",
-      "100% responsivo",
       "Acessibilidade",
+      "100% responsivo",
+      "Menu sempre visível",
+      "Carregamento ultra-rápido",
       "Formulário de contato por e-mail",
-      "Carregamento ultra-rápido"
+      "Botão flutuante para whatsapp em telas pequenas"
     ],
     "github": "https://github.com/nicolasarths/monteiro"
   },
@@ -28,6 +28,7 @@
     "features": [
       "100% responsivo",
       "Criação de cards",
+      "Construído em React",
       "Design"
     ],
     "github": "https://github.com/nicolasarths/organo"

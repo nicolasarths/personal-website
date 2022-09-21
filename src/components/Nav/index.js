@@ -18,7 +18,7 @@ const Nav = ({ options }) => {
     );
   };
   return <div className="menu">
-    {options.map(({href, text}) => <NavItem href={href} text={text}/>)}
+    {options.map(({href, text}, i) => <NavItem key={i} href={href} text={text}/>)}
   </div>;
 };
 

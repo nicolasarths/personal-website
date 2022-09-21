@@ -6,6 +6,8 @@
   position: relative;
 
   text-align: center;
+
+  overflow: hidden;
 }
 
 .main-right-side {
@@ -31,6 +33,11 @@
   padding: 10px;
 }
 
+.main .button {
+  padding: 32px;
+  margin: 16px 0;
+}
+
 @media only screen and (max-width: 1300px) {
   .main {
     align-items: center;
@@ -50,6 +57,9 @@
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
+
+    animation: fade-in 2s forwards;
+    scale: 100%;
   }
 
   .main .cover span,

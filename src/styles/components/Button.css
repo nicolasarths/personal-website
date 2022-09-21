@@ -1,10 +1,11 @@
 .button{
-    width: 80%;
+    width: 100%;
     background-color: var(--button-color);
 
     border: none;
     border-radius: 10px;
-    margin: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     padding: 8px;
     
     color: var(--secondary-color);
@@ -14,4 +15,6 @@
 
 .button:hover{
     cursor: pointer;
+    color: var(--background-color);
+    background-color: var(--button-hover);
 }

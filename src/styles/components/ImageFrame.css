@@ -1,0 +1,10 @@
+.image-frame {
+    position: relative;
+    padding: 100px
+}
+.image-frame span {
+    scale: 95%;
+}
+.image-frame img {
+    object-fit: contain;
+}

@@ -8,6 +8,7 @@
   --main-color: var(--primary-color);
 
   --button-color: rgb(219, 34, 176);
+  --button-hover: rgb(230, 134, 225);
   
   --highlight: rgb(12, 170, 88);
   --weak-highlight: rgb(115, 239, 175);
@@ -39,6 +40,7 @@ html {
 body {
   min-height: 100%;
 }
+
 img {
   max-width: 100%;
 }
@@ -86,6 +88,11 @@ label:hover {
 /* CUSTOM */
 
 .hide { display: none }
+
+.indent-out { text-indent: -999999999px; position: absolute }
+
+.invisible { opacity: 0 }
+.ant-man { scale: 0 }
 
 .no-decoration{
   list-style: none;
@@ -160,6 +167,32 @@ label:hover {
 .medium { font-size: 1.5rem }
 .big { font-size: 2rem }
 .extra { font-size: 4rem }
+
+.size-8 { font-size: 8px }
+.size-9 { font-size: 9px }
+.size-11 { font-size: 11px }
+.size-12 { font-size: 12px }
+.size-14 { font-size: 14px }
+.size-16 { font-size: 16px }
+.size-20 { font-size: 20px }
+.size-22 { font-size: 22px }
+.size-24 { font-size: 24px }
+.size-26 { font-size: 26px }
+.size-28 { font-size: 28px }
+.size-30 { font-size: 30px }
+.size-32 { font-size: 32px }
+.size-34 { font-size: 34px }
+.size-36 { font-size: 36px }
+.size-38 { font-size: 38px }
+.size-40 { font-size: 40px }
+.size-42 { font-size: 42px }
+.size-44 { font-size: 44px }
+.size-46 { font-size: 46px }
+.size-48 { font-size: 48px }
+.size-50 { font-size: 24px }
+
+.spaced { letter-spacing: 2px }
+.sparse { letter-spacing: 4px }
 
 /* TEXT-COLOR */
 
@@ -263,8 +296,6 @@ label:hover {
 .padding-bottom-big { padding-bottom: 100px }
 
 .no-padding { padding: 0; }
-  
-.indent-out { text-indent: -999999999px; position: absolute }
 
 @media only screen and (max-width: 1200px) {
   .hide-extra {

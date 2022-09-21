@@ -5,13 +5,12 @@ import '../styles/globals.css'
 import '../styles/main.css'
 import '../styles/form.css'
 import '../styles/layout.css'
-import '../styles/animations.css'
 import '../styles/under-construction.css'
 import '../styles/projects.css'
 import '../styles/task-dealer.css'
 
-import '../styles/components/Button.css'
-import '../styles/components/Disclaimer.css'
+import '../styles/components/index.css'
+import '../styles/animations/index.css'
 
 function MyApp({ Component, pageProps }) {
   return (

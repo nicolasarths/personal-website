@@ -1,78 +1,28 @@
-.main-left-section {
-  width: 3fr;
-  padding: 0 clamp(1px, 9vw, 300px);
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  position: relative;
+
+  text-align: center;
+}
+
+.main-right-side {
+  max-width: 900px;
+  padding: 0 clamp(10px, 9vw, 200px);
 }
 
 .main-title {
   margin-top: 40px;
 
-  font-size: clamp(1.5rem, 10vw, 6rem);
+  font-size: clamp(1.5rem, 10vw, 5rem);
   text-transform: uppercase;
 }
 
 .main-subtitle {
-  font-size: clamp(.9rem, 4vw, 2rem)
-}
-
-.main-project-title {
-  min-width: 30vw; 
-}
-
-.main-project-gallery-item {
-  background-color:  rgb(255, 133, 184);
-  box-shadow: rgb(255, 191, 252) -20px -20px 90px 1px inset;
-  height: 230px;
-  width: clamp(230px, 18vw, 500px);
-  border: rgb(255, 124, 200) solid;
-}
-
-.main-project-gallery-item img {
-  object-fit: cover;
-  object-position: top;
-}
-
-.main-project-gallery-item:hover {
-  cursor: pointer;
-}
-
-.main-project-gallery-item-caption {
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 3px;
-  font-weight: 600;
-  color: white;
-  background-color:var(--highlight);
-}
-
-.main-project-gallery-item-coming-up {
-  position: absolute;
-  width: 100%;
-  top: 42%;
-  bottom: 42%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  color: black;
-  background-color: rgba(255, 90, 90, 0.4);
-}
-
-.cover {
-  background: url('../../public/profile-picture.jpg');
-  background-size: 220%;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  
-  display: inline-block;
-  position: relative;
-  top: 0;
-  right: 0;
-
-  width: clamp(100px, 30vw, 400px);
-  height: 800px;
+  font-size: clamp(0.9rem, 4vw, 1.9rem);
+  margin: 0 0 16px 0;
 }
 
 .show-form-button {
@@ -81,30 +31,44 @@
   padding: 10px;
 }
 
-
 @media only screen and (max-width: 1300px) {
-  .main-left-section {
+  .main {
+    align-items: center;
+    flex-direction: column;
     padding: 0;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .main-left-section {
     width: 100%;
   }
 
-  .main-right-section {
-    display: none;
+  .main .cover {
+    order: -1;
+    width: 700px;
+    height: 200px;
+    position: relative;
+    top: 32px;
+
+    background: url(/mobile-cover.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
   }
 
-  .main-project-gallery {
-    align-self: center;
-    max-width: 900px;
+  .main .cover span,
+  .main .cover img {
+    display: none !important;
+  }
+
+  .main .spacer {
+    display: none;
   }
 }
-@media only screen and (max-width: 800px) {
-  .main-project-gallery-item{
-    width: 90vw;
-    height: 70vw;
+
+@media only screen and (max-width: 700px) {
+  .main .cover {
+    width: 100%;
+    height: 30vw;
+
+    background-size: 100%;
+    background-position: 40% 30%;
+    background-repeat: no-repeat;
   }
-  
 }

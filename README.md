@@ -6,8 +6,8 @@ Language: Portuguese (English version coming soon...)
 
 Live at: https://nicolasarths.com.br
 
-![Nicolas Arths website screenshot](/public/demo.png)
+![Nicolas Arths website screenshot](/public/demo/demo.png)
 
-![Nicolas Arths website screenshot](/public/demo-2.png)
+![Nicolas Arths website screenshot](/public/demo/demo-2.png)
 
-![Nicolas Arths website screenshot](/public/demo-3.png)
+![Nicolas Arths website screenshot](/public/demo/demo-3.png)

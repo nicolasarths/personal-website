@@ -1,0 +1,80 @@
+.carousel {
+  position: relative;
+  margin-block: clamp(20px, 7vw, 50px);
+  width: 100%;
+  overflow: hidden;
+  height: clamp(200px, 40vw, 600px);
+  background-color: rgba(8, 0, 100, 0.3);
+}
+
+.carousel img {
+  scale: 98%;
+  object-fit: cover;
+}
+
+.carousel-nav-circles-background {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: rgba(5, 5, 112, 0.8);
+
+  border-radius: 10px;
+}
+
+.carousel-nav-circles-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+
+  z-index: 3;
+}
+.carousel-nav-circles {
+  width: clamp(10px, 2vw, 20px);
+  height: clamp(10px, 2vw, 20px);
+  margin: 5px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: rgb(253, 147, 255);
+  font-weight: 600;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-nav-circles-container .active {
+  background-color: rgb(251, 0, 255);
+  color: rgba(0, 0, 255);
+}
+
+.carousel-arrow {
+  position: absolute;
+  z-index: 2;
+  top: 42%;
+
+  background-color: rgba(0, 38, 255, 0.3);
+  color: rgb(253, 147, 255);
+
+  font-size: clamp(0.8rem, 3vw, 1.4rem);
+  padding: 5px;
+  padding-inline: 10px;
+  margin: 5px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.carousel-left-arrow {
+  left: 0;
+}
+
+.carousel-right-arrow {
+  right: 0;
+}

@@ -1,4 +1,5 @@
-@import 'Button.css';
 @import 'Cover.css';
 @import 'Disclaimer.css';
 @import 'ImageFrame.css';
+@import 'Carousel.css';
+@import './Buttons/index.css'

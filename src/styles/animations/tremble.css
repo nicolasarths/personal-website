@@ -1,0 +1,14 @@
+.tremble,
+.trembling {
+  animation: tremble 150ms infinite;
+}
+
+@keyframes tremble {
+  0% {
+    rotate: 0.5deg;
+}
+50% {
+    rotate: -0.5deg;
+    translate: 0 2px;
+  }
+}

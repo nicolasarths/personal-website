@@ -2,6 +2,8 @@
 @import 'scale-ups.css';
 @import 'glow.css';
 @import 'transforms.css';
+@import 'tremble.css';
+@import 'color-changing.css';
 
 .forwards { animation-fill-mode: forwards }
 

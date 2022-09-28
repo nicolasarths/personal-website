@@ -1,14 +1,9 @@
-export const navOptions = [
-    {
-      href: "/pt-br",
-      text: "Início",
-    },
-    {
-      href: "/projetos",
-      text: "Projetos",
-    },
-    {
-      href: "/contato",
-      text: "Contato",
-    },
-  ];
+import { carouselImages } from "./carouselImages";
+import { navOptions } from "./navOptions";
+import { buttonsToDemo } from "./Features/buttonsToDemo";
+
+export {
+  carouselImages,
+  navOptions,
+  buttonsToDemo
+}

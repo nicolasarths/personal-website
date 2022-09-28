@@ -91,7 +91,6 @@ label:hover {
 
 .indent-out { text-indent: -999999999px; position: absolute }
 
-.invisible { opacity: 0 }
 .ant-man { scale: 0 }
 
 .no-decoration{
@@ -104,6 +103,18 @@ label:hover {
   width: clamp(200px, 40vw, 500px);
   height: clamp(200px, 40vw, 500px);
 }
+
+/* OPACITY */
+.opacity-0, .invisible { opacity: 0 }
+.opacity-1 { opacity: 10% }
+.opacity-2 { opacity: 20% }
+.opacity-3 { opacity: 30% }
+.opacity-4 { opacity: 40% }
+.opacity-5 { opacity: 50% }
+.opacity-6 { opacity: 60% }
+.opacity-7 { opacity: 70% }
+.opacity-8 { opacity: 80% }
+.opacity-9 { opacity: 90% }
 
 /* DISPLAY */
 

@@ -4,5 +4,6 @@ import JumpingButton from "./JumpingButton";
 import Option from "./Option";
 import TremblingButton from "./TremblingButton";
 import SquareButton from "./SquareButton";
+import DeepButton from "./DeepButton";
 
-export { Button, FadeInButton, JumpingButton, Option, TremblingButton, SquareButton };
+export { Button, FadeInButton, JumpingButton, Option, TremblingButton, SquareButton, DeepButton };

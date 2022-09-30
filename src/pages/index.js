@@ -1,8 +1,7 @@
-import MenuOfButtons from "../../components/MenuOfButtons";
-import MainHeader from "../../components/Main/MainHeader";
-import Description from "../../components/Main/Description";
-import Spacer from "../../components/Spacer";
-import Cover from "../../components/Cover";
+import MenuOfButtons from "../components/MenuOfButtons";
+import MainHeader from "../components/Main/MainHeader";
+import Description from "../components/Main/Description";
+import Cover from "../components/Cover";
 
 export default function Home() {
   const options = [

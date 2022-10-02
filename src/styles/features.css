@@ -3,13 +3,13 @@
 }
 
 .features-buttons-demo .button {
-    width: 20vw;
+    width: 200px;
     min-height: 80px;
     padding: 20px 40px;
     animation-iteration-count: infinite;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .features-buttons-demo .button {
         width: 40vw;
     }

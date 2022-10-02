@@ -1,6 +1,6 @@
 export const navOptions = [
     {
-      href: "/pt-br",
+      href: "/",
       text: "Início",
     },
     {

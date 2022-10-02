@@ -1,8 +1,8 @@
-const SquareButton = ({href, children, style}) => {
+const SquareButton = ({onClick, children, style}) => {
   return <button className="button" style={{
     borderRadius: "0",
     ...style
-  }} onClick={() => location.href = href}>{children}</button>
+  }} onClick={onClick}>{children}</button>
 };
 
 export default SquareButton;

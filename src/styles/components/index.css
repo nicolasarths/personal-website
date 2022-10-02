@@ -2,4 +2,7 @@
 @import 'Disclaimer.css';
 @import 'ImageFrame.css';
 @import 'Carousel.css';
-@import './Buttons/index.css'
+@import 'TitleWithBannerContainer.css';
+@import 'form.css';
+
+@import './Buttons/index.css';

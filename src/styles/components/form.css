@@ -1,0 +1,44 @@
+.field {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.form-input {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  margin-bottom: 10px;
+  border: none;
+  resize: none;
+  width: 100%;
+  margin-block: 10px;
+}
+
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.form-submit {
+  font-weight: 700;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  background-color: inherit;
+
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  margin-bottom: 32px;
+  border: none;
+  resize: none;
+  width: 100%;
+}
+
+.form-submit:hover {
+  color: white;
+  background-color: black;
+}

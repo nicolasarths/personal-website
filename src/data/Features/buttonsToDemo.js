@@ -52,7 +52,7 @@ export const buttonsToDemo = [
   >
     Botão que surge aumentando
   </Button>,
-  <Button key="newbuttonbutton" style={{ fontSize: "10px", paddingInline: "10px", paddingBlock: "23px" }}>
+  <Button onClick={() => location.href = "#contatar"} key="newbuttonbutton" style={{ fontSize: "10px", paddingInline: "10px", paddingBlock: "23px" }}>
     Quer um botão com a sua cara? Clique aqui e peça agora mesmo!
   </Button>,
 ];

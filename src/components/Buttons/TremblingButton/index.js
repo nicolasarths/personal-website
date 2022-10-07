@@ -1,5 +1,5 @@
-const TremblingButton = ({ text, href }) => {
-    return (<button className="button trembling" onClick={() => location.href = {href}}>{text}</button>)
+const TremblingButton = ({ text, onClick }) => {
+    return (<button className="button trembling" onClick={onClick}>{text}</button>)
 }
 
 export default TremblingButton

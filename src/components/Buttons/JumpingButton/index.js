@@ -1,8 +1,8 @@
-const JumpingButton = ({ text, href }) => {
+const JumpingButton = ({ text, onClick }) => {
   return (
     <button
       className="button jumping-button"
-      onClick={() => (location.href = href)}
+      onClick={onClick}
     >
       {text}
     </button>

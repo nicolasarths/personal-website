@@ -1,0 +1,43 @@
+.features-buttons-demo {
+  display: flex;
+}
+
+.features-buttons-demo .button {
+  width: 200px;
+  min-height: 80px;
+  padding: 20px 40px;
+  animation-iteration-count: infinite;
+}
+
+.develop-page-attention button {
+  padding: 32px;
+  font-size: 16px;
+  text-align: left;
+  background-color: #cad0d0;
+  color: #000;
+}
+
+.develop-page-organize {
+  color: white;
+}
+
+.develop-page-organize button:hover {
+    background-color: #eda;
+    color: black;
+}
+
+.develop-page-attention button:hover {
+  color: #fff;
+  background-color: #010110;
+}
+
+@media screen and (max-width: 900px) {
+  .features-buttons-demo .button {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .features-buttons-demo .button {
+    width: 80vw;
+  }
+}

@@ -1,0 +1,29 @@
+.window-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  z-index: 9999999999999999999999;
+
+  /* position centering hack */
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: clamp(100px, 85vw, 1000px);
+  padding: 10px;
+
+  background-color: #3428bd;
+
+  color: white;
+  border: 2px solid white;
+}
+
+.window-alert a {
+  color: pink;
+  text-decoration: underline;
+}
+
+.window-alert-alert {
+  padding-inline: 32px;
+}

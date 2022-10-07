@@ -1,6 +1,6 @@
 import { carouselImages } from "./carouselImages";
 import { navOptions } from "./navOptions";
-import { buttonsToDemo } from "./Features/buttonsToDemo";
+import { buttonsToDemo } from "./DevelopPage/buttonsToDemo";
 
 export {
   carouselImages,

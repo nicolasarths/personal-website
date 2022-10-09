@@ -22,7 +22,6 @@ const DevelopPageContact = () => {
       budgetEmailSubject,
       () => redirectTo(successfulContactPage),
       () => {
-        console.log("failure");
         setWindowAlert(
           <SendMailFailureAlert
             form={formElements}

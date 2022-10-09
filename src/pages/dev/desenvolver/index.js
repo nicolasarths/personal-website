@@ -6,9 +6,6 @@ import {
   DevelopPageOrganize
 } from "components/DevelopPage";
 
-
-
-
 const DevelopPage = () => {
   return (
     <>

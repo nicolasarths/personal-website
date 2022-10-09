@@ -25,8 +25,6 @@ export const sendMail = async (
     currentTargetElements,
     emailSubject
   );
-  if (successfullySent) {
-    functionToBeCalledIfSuccess();
-  }
+  if (successfullySent) functionToBeCalledIfSuccess();
   else if (functionToBeCalledIfFailure) functionToBeCalledIfFailure();
 };

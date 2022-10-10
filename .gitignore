@@ -7,6 +7,9 @@
 
 # testing
 /coverage
+/src/pages/teste
+/src/assets/tests-page
+/src/styles/Teste.scss
 
 # next.js
 /.next/

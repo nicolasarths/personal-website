@@ -1,4 +1,4 @@
-const DeepButton = ({onClick, children}) => {
-    return (<button className="deep-button" onClick={onClick}>{children}</button>)
+const DeepButton = ({children, ...props}) => {
+    return (<button className="deep-button" {...props}>{children}</button>)
 }
 export default DeepButton;

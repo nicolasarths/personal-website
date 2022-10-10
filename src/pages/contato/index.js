@@ -39,9 +39,9 @@ const ContactPage = () => {
     <div className="contact-form container-small margin-auto padding-bottom-big padding-small">
       <h1>Entre em contato...</h1>
 
-      <SubjectList />
+      {/* <SubjectList />
       
-      <h2 className="contact-form-title">Ou então, deixe sua mensagem:</h2>
+      <h2 className="contact-form-title">Ou então, deixe sua mensagem:</h2> */}
 
       <Form form="contactForm" method="post" onSubmit={handleSubmit}>
         <Field
@@ -58,6 +58,7 @@ const ContactPage = () => {
           name="E-mail"
           type="email"
           placeholder="seu@email.com"
+          required
         />
         <TextArea
           form="contactForm"
@@ -65,6 +66,7 @@ const ContactPage = () => {
           name="Mensagem"
           placeholder="Sua mensagem"
           rows="5"
+          required
         />
         <Submit value="Enviar" />
       </Form>

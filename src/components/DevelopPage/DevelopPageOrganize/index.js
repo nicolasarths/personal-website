@@ -19,7 +19,7 @@ const DevelopPageOrganize = () => {
                 E instruir seus clientes, alavancando sua capacidade de
                 converter acessos em bons negócios.
               </p>
-              <DeepButton>Vamos conversar?</DeepButton>
+              <DeepButton onClick={() => location.href = "#contatar"}>Vamos conversar?</DeepButton>
             </>
           )}
           image={() => (
@@ -27,7 +27,7 @@ const DevelopPageOrganize = () => {
               src={organize}
               alt="organized folders, one has a label saying madonna"
               objectFit="cover"
-              style={{ height: "100%" }}
+              style={{ height: "100%", width: "100%" }}
             />
           )}
         />

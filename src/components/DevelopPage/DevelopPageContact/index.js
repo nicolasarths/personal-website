@@ -6,7 +6,10 @@ import SendMailFailureAlert from "components/ContactPage/SendMailFailureAlert";
 import { useContext } from "react";
 import { WindowAlertContext } from "context/windowAlert";
 import Section from "components/Section/index.js";
-
+import { SquareButton } from "components/Buttons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const DevelopPageContact = () => {
   const { setWindowAlert } = useContext(WindowAlertContext);
@@ -34,34 +37,38 @@ const DevelopPageContact = () => {
 
   return (
     <Section name="contatar">
-      <div className="padding-small container-medium margin-auto">
-        <h2 className="size-32">Contatar</h2>
+      <div className="contact-container">
+        <a
+          href="https://wa.me/051984376635"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SquareButton>
+            <FontAwesomeIcon icon={faWhatsapp} style={{ height: "26px" }} />
+            Envie uma mensagem no whatsapp
+          </SquareButton>
+        </a>
+        <h3 className="normal">ou envie uma mensagem</h3>
         <Form onSubmit={handleSubmit}>
           <Field
-            label="Indique o seu nome"
+            label="Digite seu nome"
             name="name"
             type="text"
-            placeholder="Digite seu nome"
+            placeholder="Seu Nome"
             required
           />
           <Field
-            label="E-mail"
+            label="Digite seu e-mail"
             name="email"
             type="email"
-            placeholder="Insira seu contato"
+            placeholder="seu@email.com"
             required
-          />
-          <Field
-            label="Telefone (opcional)"
-            name="tel"
-            type="tel"
-            placeholder="(99) 9 9999-9999"
           />
           <TextArea
             name="message"
             label="E deixe a sua mensagem:"
-            placeholder="Mensagem"
-            rows="5"
+            placeholder="Vamos nos conhecer?"
+            rows="1"
             required
           />
           <Submit />

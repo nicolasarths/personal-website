@@ -3,7 +3,7 @@ import { carouselImages, buttonsToDemo } from "data";
 
 const DevelopPageComponents = () => {
   return (
-    <div className="client-page container-big margin-auto padding-small">
+    <div className="components container-big margin-auto padding-small">
       <h2 className="size-32">Componentes</h2>
       <p className="text-justify">
         Está procurando por novos elementos para preencher a sua página web?

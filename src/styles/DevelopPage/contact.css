@@ -1,0 +1,58 @@
+.develop-page .contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.develop-page .contact-container * {
+  text-align: center;
+}
+.develop-page .contact-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 16px;
+  gap: 16px;
+  background-color: green;
+  border: none;
+  box-shadow: 1px 1px 8px #9fb5;
+}
+
+.develop-page .contact-container .form-input {
+  background-color: transparent;
+  padding: 10px 0;
+  border-bottom: 0.5px white solid;
+}
+
+@media screen and (min-width: 600px) {
+    .develop-page .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 50px;
+        max-width: unset;
+        padding-inline: 30px;  
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .develop-page .contact-container a {
+        grid-row-start: 4;
+    }
+    .develop-page .contact-container h3 {
+        grid-row-start: 5;
+        grid-column-start: 1;
+    }
+
+    .develop-page .contact-container .container-small {
+        grid-row-start: 1;
+        grid-row-end: 10;
+        grid-column-start: 2;
+    }
+    .develop-page .contact-container .container-small .form-submit {
+        width: 35%;
+        margin: auto;
+        border: 1px solid white;
+    } 
+}

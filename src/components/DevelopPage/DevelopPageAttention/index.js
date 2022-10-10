@@ -36,7 +36,7 @@ const DevelopPageAttention = () => {
               src={attention}
               alt="a black pug paying attention"
               objectFit="cover"
-              style={{ height: "100%" }}
+              style={{ height: "100%", width: "100%" }}
             />
           )}
         />

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap");
+
+.develop-page .header * {
+  opacity: 0;
+  animation: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.develop-page .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: row wrap;
+  gap: 16px;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.develop-page .header h1 {
+  font-family: Raleway;
+  font-weight: 600;
+  padding-inline: 30px;
+  animation-delay: 400ms;
+  margin-block: 16px 24px;
+}
+
+.develop-page .header h1 strong {
+  font-family: Raleway;
+  font-weight: 900;
+  color: var(--primary-color);
+  animation-delay: 2000ms;
+}
+
+.develop-page .buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  animation-delay: 1200ms;
+}
+
+.develop-page .buttons button {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 10px !important;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: Raleway;
+  font-size: 14px;
+  margin: 0;
+  border: 0;
+}
+
+.develop-page .buttons button:last-child {
+  background-color: #32f;
+}
+
+.develop-page .buttons button:hover {
+  color: black;
+  background-color: #db4;
+}
+.develop-page .buttons button:hover:last-child {
+  color: white;
+  background-color: black;
+}
+
+.develop-page .paper {
+  justify-content: center;
+  height: fit-content;
+  margin: 16px;
+  animation-delay: 3200ms;
+}
+
+.develop-page .whoami {
+  display: flex;
+  padding: 24px;
+  padding-top: 0;
+  flex-direction: column;
+  align-items: center;
+  animation-delay: 4000ms;
+}
+.develop-page .whoami h4 {
+  margin-top: 0;
+}
+
+.develop-page .whoami .image {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.develop-page .whoami .image img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.develop-page .whoami .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 140%;
+  text-align: justify;
+  max-width: 350px;
+  letter-spacing: 0.6px;
+}
+
+@media screen and (min-width: 700px) {
+  .develop-page .header {
+    padding-left: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1vw;
+  }
+
+  .develop-page .header .buttons {
+    gap: 10px;
+  }
+  
+  .develop-page .header .buttons button {
+    height: 50px;
+  }
+  
+  .develop-page .header .paper {
+    margin: auto;
+    grid-row-start: 3;
+    grid-row-end: 10;
+    order: 2;
+  }
+
+  .develop-page .header .whoami {
+    padding-top: 32px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+}

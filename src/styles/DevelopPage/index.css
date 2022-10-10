@@ -1,0 +1,76 @@
+@import "header.css";
+@import "contact.css";
+
+.develop-page {
+  animation: fade-in 2s forwards;
+  opacity: 0;
+}
+
+.develop-page .lets-explore {
+  padding: 32px 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.develop-page .components {
+  padding-top: 0;
+}
+
+.develop-page .components h2 {
+  text-align: center;
+}
+
+.features-buttons-demo {
+  display: flex;
+}
+
+.features-buttons-demo .button {
+  width: 200px;
+  min-height: 80px;
+  padding: 20px 40px;
+  animation-iteration-count: infinite;
+}
+
+.develop-page-attention button {
+  padding: 32px;
+  font-size: 16px;
+  text-align: left;
+  background-color: #cad0d0;
+  color: #000;
+}
+
+.develop-page-organize {
+  color: white;
+}
+
+.develop-page-organize button {
+  border: none;
+  color: var(--background-color);
+  background-color: #eda;
+}
+
+.develop-page-organize button:hover {
+  background-color: white;
+  color: black;
+}
+
+.develop-page-attention button:hover {
+  color: #fff;
+  background-color: #010110;
+}
+
+@media screen and (max-width: 900px) {
+  .features-buttons-demo .button {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .develop-page .description {
+    position: relative;
+  }
+}
+@media screen and (max-width: 400px) {
+  .features-buttons-demo .button {
+    width: 80vw;
+  }
+}

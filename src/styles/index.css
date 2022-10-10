@@ -5,4 +5,5 @@
 @import "projects.css";
 @import "under-construction.css";
 @import "main.css";
-@import "DevelopPage.css";
+
+@import "DevelopPage/index.css";

@@ -19,12 +19,13 @@
     }
     
     .text-and-image-image {
+        height: 400px;
         padding-block: 32px;
-        order: 1;
+        order: 0;
         width: 100%;
     }
     .text-and-image-text {
-        order: 0;
+        order: 1;
         width: 100%;
     }
 }

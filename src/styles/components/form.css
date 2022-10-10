@@ -1,3 +1,7 @@
+.contact-form * {
+  animation: fade-in 2s;
+}
+
 .field {
   margin-top: 16px;
   width: 100%;

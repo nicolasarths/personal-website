@@ -129,8 +129,10 @@ label:hover {
 .nowrap{flex-wrap: nowrap}
 
 .gap {gap: 10px}
+.gap-small {gap: 30px}
 .gap-medium {gap: 50px}
 .gap-big {gap: 100px}
+.gap-extra {gap: 500px}
 
 .flex-column{ flex-direction: column;}
 .flex-row{ flex-direction: row;}

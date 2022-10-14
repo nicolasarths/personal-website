@@ -1,0 +1,43 @@
+.last-articles {
+    padding: 16px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.last-articles .articles {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.last-articles h3 {
+    margin: 0;
+}
+
+.last-articles .snippet-container {
+    display: flex;
+    flex-direction: column;
+    max-width:max-content;
+}
+
+.last-articles img {
+    object-fit: cover;
+}
+
+.last-articles h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-block: 10px 0;
+}
+
+.last-articles p {
+    margin-block: 0;
+}
+
+.last-articles .snippet {
+    padding-block: 10px;
+}

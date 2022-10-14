@@ -1,26 +1,30 @@
-:root {
-  --background-color: rgb(0, 4, 41);
-  --background-soft: rgb(11, 19, 83);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-  --primary-color: rgb(255, 0, 195);
-  --secondary-color: rgb(255, 203, 234);
+:root {
+  --background-color: #000429;
+  --background-soft: #0b1353;
+  --background-inversion: #fe8;
+
+  --primary-color: #ffde5a;
+  --secondary-color: #e1e0f7;
 
   --main-color: var(--primary-color);
 
-  --button-color: rgb(219, 34, 176);
-  --button-hover: rgb(230, 134, 225);
+  --button-color: #004;
+  --button-background-color: #fc4;
+  --button-hover: #fd6;
   
-  --highlight: rgb(12, 170, 88);
-  --weak-highlight: rgb(115, 239, 175);
+  --highlight: #0caa58;
+  --weak-highlight: #73efaf;
   
-  --success: green;
-  --failure: red;
+  --success: #008000;
+  --failure: #ff0000;
   
-  --blue: rgb(15, 15, 207);
-  --red: rgb(255, 45, 45);
-  --green: rgb(34, 204, 43);
-  --gray: rgb(85, 85, 85);
-  --light-gray: rgb(210, 221, 232);
+  --blue: #0f0fcf;
+  --red: #ff2d2d;
+  --green: #22cc2b;
+  --gray: #555555;
+  --light-gray: #d2dde8;
 }
 
 
@@ -28,7 +32,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--background-color);
   color: var(--secondary-color);
 }
@@ -48,6 +52,10 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  cursor:pointer;
 }
 
 *, *::before, *::after {
@@ -98,6 +106,8 @@ label:hover {
   text-decoration: none;
 }
 
+.underlined, .underline { text-decoration: underline }
+
 .next-image {
   position: relative;
   width: clamp(200px, 40vw, 500px);
@@ -142,8 +152,10 @@ label:hover {
 .flex-around{justify-content: space-around;}
 .flex-evenly{justify-content: space-evenly;}
 
-.align-center{align-items: center;}
-.align-right{align-items:flex-end;}
+.align-center { align-items: center }
+.align-left { align-items: flex-start }
+.align-baseline { align-items: baseline }
+.align-right { align-items:flex-end }
 
 
 /* POSITION */
@@ -210,6 +222,16 @@ label:hover {
 /* TEXT-COLOR */
 
 .highlight { color: var(--highlight) }
+.inline-highlight-dark {
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
 
 .black { color: black }
 .white { color: white }

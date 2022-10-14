@@ -1,10 +1,9 @@
 import Nav from "./Nav";
-import { navOptions } from "../data"
 
-export default function Layout({ children }) {
+export default function Layout({ menuOptions, children }) {
   return (
     <>
-      <Nav options={ navOptions }/>
+      <Nav options={menuOptions} />
       {children}
       <footer className="footer">
         <span className="footer-rights">Nícolas Arths.</span>

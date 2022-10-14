@@ -17,9 +17,15 @@ const Nav = ({ options }) => {
       </div>
     );
   };
-  return <div className="menu">
-    {options.map(({href, text}, i) => <NavItem key={i} href={href} text={text}/>)}
-  </div>;
+  return (
+    <span className="navbar">
+      <div className="menu">
+        {options.map(({ href, text }, i) => (
+          <NavItem key={i} href={href} text={text} />
+        ))}
+      </div>
+    </span>
+  );
 };
 
 export default Nav;

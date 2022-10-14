@@ -1,12 +1,9 @@
-@import 'Cover.css';
 @import 'Disclaimer.css';
 @import 'ImageFrame.css';
 @import 'Carousel.css';
 @import 'TitleWithButton.css';
 @import 'form.css';
 @import 'WindowAlert.css';
-@import 'TextAndImage.css';
 @import 'SvgContainer.css';
 
-@import 'Buttons/index.css';
-@import 'blocks/index.css'
+@import 'blog/index.css'; 

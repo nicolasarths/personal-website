@@ -1,12 +1,11 @@
-import Image from "next/image";
+import Img from "components/Img";
 
 const CarouselImages = ({ id, src, alt }) => {
   return (
-    <Image
+    <Img
       key={id}
       src={src}
       alt={alt}
-      layout="fill"
     />
   );
 };

@@ -3,7 +3,7 @@ import { LeftArrow, RightArrow } from "./Arrows";
 import NavCircles from "./NavCircles";
 import CarouselImages from "./CarouselImages";
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, className, ...props }) => {
   const [currentImageId, setCurrentImageId] = useState(0);
 
   const nextImage = useCallback(() => {
@@ -28,7 +28,7 @@ const Carousel = ({ images }) => {
   }, [nextImage]);
 
   return (
-    <div className="carousel">
+    <div className={"carousel " + (className ? className : "")} {...props}>
       <LeftArrow prevImage={prevImage} />
 
       <CarouselImages

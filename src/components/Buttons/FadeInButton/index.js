@@ -1,12 +1,13 @@
-const FadeInButton = ({ text, href, animationDuration }) => {
+import Button from "../Button";
+
+const FadeInButton = ({ children, ...props}) => {
   return (
-    <button
-      style={{ animationDuration }}
-      className="button fade-in"
-      href={href}
+    <Button
+      {...props}
+      type="fadeIn"
     >
-      {text}
-    </button>
+      {children}
+    </Button>
   );
 };
 

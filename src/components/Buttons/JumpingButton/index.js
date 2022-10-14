@@ -1,11 +1,13 @@
-const JumpingButton = ({ text, onClick }) => {
+import Button from "../Button";
+
+const JumpingButton = ({ children, ...props }) => {
   return (
-    <button
-      className="button jumping-button"
-      onClick={onClick}
+    <Button
+      type="trembler"
+      {...props}
     >
-      {text}
-    </button>
+      {children}
+    </Button>
   );
 };
 

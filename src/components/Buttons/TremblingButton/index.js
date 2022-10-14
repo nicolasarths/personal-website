@@ -1,5 +1,11 @@
-const TremblingButton = ({ text, onClick }) => {
-    return (<button className="button trembling" onClick={onClick}>{text}</button>)
-}
+import Button from "../Button";
 
-export default TremblingButton
+const TremblingButton = ({ children, ...props }) => {
+  return (
+    <Button className="button trembling" {...props}>
+      {children}
+    </Button>
+  );
+};
+
+export default TremblingButton;

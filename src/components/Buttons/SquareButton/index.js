@@ -1,8 +1,11 @@
-const SquareButton = ({onClick, children, style}) => {
-  return <button className="button" style={{
-    borderRadius: "0",
-    ...style
-  }} onClick={onClick}>{children}</button>
+import Button from "../Button";
+
+const SquareButton = ({ children, ...props }) => {
+  return (
+    <Button {...props} type="square">
+      {children}
+    </Button>
+  );
 };
 
 export default SquareButton;

@@ -1,0 +1,64 @@
+.about
+    max-width: 500px
+
+    padding: 20px
+    margin: 0
+    margin-bottom: 162px
+
+    text-align: justify
+    letter-spacing: 1px
+
+    p
+        font-size: 1.05rem
+        line-height: 1.9em
+
+    h2
+        position: relative
+        font-size: 1.5rem
+        text-align: center
+
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: -10px
+            left: 50%
+            transform: translate(-50%,-50%)
+            width: 30px
+            height: 5px
+            background-color: var(--secondary-color)
+
+    .menu
+        display: flex
+        gap: 10px
+        flex-flow: row wrap
+        justify-content: space-between
+        align-items: center
+
+        a
+            width: 30%
+            max-width: 500px
+            padding: 5px
+            border-radius: 4px
+            background-color: var(--primary-color)
+
+            color: var(--background-color)
+            text-align: center
+            font-weight: 700
+
+            &:first-of-type
+                color: black
+                background-color: white
+
+                display: flex
+                justify-content: center
+                width: 100%
+                padding: 5px
+
+                font-weight: 600
+                white-space: nowrap
+
+                border-radius: 3px
+
+            @media screen and (max-width: 350px)
+                font-size: .8rem

@@ -1,0 +1,101 @@
+.header
+    width: 100%
+
+    img
+        width: 100%
+        height: 80vh
+        object-position: top
+        object-fit: cover
+
+        display: none
+
+    .text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        flex-wrap: wrap
+        align-content: center
+        gap: 60px
+
+        width: 100%
+        height: 93vh
+
+        padding: clamp(10px, 1vw, 200px)
+
+        animation: fade-in 2s forwards
+
+        h1,
+        strong
+            text-align: left
+            font-family: Playfair Display, "Times New Roman", serif
+            margin: 0
+
+            font-size: clamp(2.8rem, 10vw, 3rem)
+            text-transform: uppercase
+
+            text-decoration: underline 3px
+            text-underline-offset: 7px
+
+            font-size: 1.35em
+            max-width: min-content
+
+        h1
+            font-size: 3rem
+
+        h2
+            text-align: left
+            font-size: clamp(0.9rem, 4vw, 1.9rem)
+            margin-top: 10px
+
+        .menu
+            animation: fade-in 2s
+
+            grid-row-start: 1
+            grid-row-end: 2
+            grid-column-start: 2
+
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            
+            gap: 10px
+
+            color: var(--secondary-color)
+            background-color: transparent
+
+            a, a::after
+                background: linear-gradient(to right, white, #fd0, white)
+                animation: rainbow-animation linear infinite
+                left: 50%
+                transform: translate(-50%,-50%)
+
+                @keyframes rainbow-animation
+                    to
+                        background-position: 4500vh
+
+            a
+                width: fit-content
+                font-weight: 600
+                -webkit-text-fill-color: transparent
+                -webkit-background-clip: text
+                animation-duration: 700s
+
+                position: relative
+
+                &::after
+                    content: ""
+                    display: block
+                    position: absolute
+                    bottom: -2px
+                    right: 0
+                    width: 25%
+                    height: 1px
+                    animation-duration: 2000s
+
+            a:hover
+                background: linear-gradient(to right, white, #fd0, #f60)
+                -webkit-text-fill-color: transparent
+                -webkit-background-clip: text
+
+    @media screen and (min-width: 590px)
+        display: flex

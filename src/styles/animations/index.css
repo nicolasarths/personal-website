@@ -3,7 +3,7 @@
 @import 'glow.css';
 @import 'transforms.css';
 @import 'tremble.css';
-@import 'color-changing.css';
+@import 'color-changing-button.css';
 
 .forwards { animation-fill-mode: forwards }
 

@@ -4,11 +4,11 @@ export const navOptions = [
       text: "Início",
     },
     {
-      href: "/projetos",
-      text: "Projetos",
-    },
-    {
       href: "/contato",
       text: "Contato",
+    },
+    {
+      href: "/dev/desenvolver",
+      text: "Explorar",
     },
   ];

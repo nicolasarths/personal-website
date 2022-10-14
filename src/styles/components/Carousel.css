@@ -1,6 +1,5 @@
 .carousel {
   position: relative;
-  margin-block: clamp(20px, 7vw, 50px);
   width: 100%;
   overflow: hidden;
   height: clamp(200px, 40vw, 600px);
@@ -8,8 +7,8 @@
 }
 
 .carousel img {
-  scale: 98%;
   object-fit: cover;
+  border: 2px white solid;
 }
 
 .carousel-nav-circles-background {
@@ -41,7 +40,7 @@
   display: flex;
   justify-content: center;
 
-  background-color: rgb(253, 147, 255);
+  background-color: var(--secondary-color);
   font-weight: 600;
 
   border-radius: 50%;
@@ -49,7 +48,7 @@
 }
 
 .carousel-nav-circles-container .active {
-  background-color: rgb(251, 0, 255);
+  background-color: var(--primary-color);
   color: rgba(0, 0, 255);
 }
 
@@ -59,7 +58,7 @@
   top: 42%;
 
   background-color: rgba(0, 38, 255, 0.3);
-  color: rgb(253, 147, 255);
+  color: var(--primary-color);
 
   font-size: clamp(0.8rem, 3vw, 1.4rem);
   padding: 5px;

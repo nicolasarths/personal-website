@@ -1,0 +1,123 @@
+@use './vars' as *
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap")
+
+.header
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-flow: column wrap
+    gap: 16px
+    max-width: 1000px
+    margin: auto
+    padding-block: 30px 60px
+
+    * :global
+        opacity: 0
+        animation: fade-in 2s forwards
+
+    h1
+        place-self: center
+        display: flex
+        width: fit-content
+        flex-direction: column
+        font-family: Raleway
+        font-weight: 600
+        font-size: 1.3rem
+        padding-inline: 30px
+        animation-delay: 400ms
+        margin-block: 16px 24px
+
+        strong
+            display: block
+            font-size: 3.5rem
+            font-family: Raleway
+            font-weight: 900
+            color: var(--primary-color)
+            animation-delay: 2s
+
+        span
+            align-self: flex-end
+
+    .buttons
+        width: 100%
+        display: grid
+        grid-template-columns: 1fr
+
+    button
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 26px 10px !important
+        text-transform: uppercase
+        font-weight: 800
+        font-family: Raleway
+        font-size: 14px
+        margin: 0
+        border: 0
+
+        &:first-child
+            border-top: 10px black solid
+            animation-delay: 3500ms
+
+            &:hover
+                color: white
+                background-color: #005
+
+        &:last-child
+            color: white
+            border-bottom: 10px var(--primary-color) solid
+            animation-delay: 5s
+            position: relative
+
+            &:hover
+                background-blend-mode: overlay
+            
+            &:before
+                content: "MIRAR NO FUTURO"
+                display: flex
+                justify-content: center
+                align-items: center
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                
+                background-image: url("./starred.jpg")
+                background-size: 100px
+                animation: background-movement 200000s infinite
+
+    .paper
+        justify-content: center
+        height: fit-content
+        margin: 40px 3px
+        max-width: 90%
+        animation-delay: 6s
+
+    @media screen and (min-width: $breakpoint)
+        padding-left: 42px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 0 1vw
+
+        .buttons
+            button
+                height: 50px
+
+                &:first-child
+                    border-top: 3px solid black
+                button:last-child
+                    border: 3px var(--primary-color) solid
+
+        .paper
+            margin: auto
+            grid-row-start: 3
+            grid-row-end: 10
+            order: 2
+
+@keyframes background-movement
+    10%
+        background-position-y: 10000000%
+    100%
+        background-position: 5000000% 100000000%

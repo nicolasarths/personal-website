@@ -1,0 +1,41 @@
+.components
+  display: flex
+  flex-direction: column
+  gap: 30px
+  margin: 62px auto
+  padding: 10px
+
+  *
+    max-width: 800px
+    margin: auto
+
+  .carousel, .carousel *
+    max-width: unset
+  
+  .carousel
+    padding: 0
+    width: 100%
+    max-width: 1500px
+    
+  h3
+    padding: 0 20px
+    font-size: 1.7rem
+
+  .buttons
+    display: grid
+    grid-template-columns: 1fr
+    justify-items: center
+    gap: 20px 
+
+    button
+      width: 90%
+      max-width: 300px
+      min-height: 80px
+      padding: 20px 40px
+      animation-iteration-count: infinite
+
+    @media screen and ( min-width: 430px )
+      grid-template-columns: repeat(2, 1fr)    
+    
+    @media screen and ( min-width: 700px )
+      grid-template-columns: repeat(3, 1fr)    

@@ -1,0 +1,57 @@
+.container
+  display: flex
+  flex-direction: column
+  padding: 32px
+  max-width: 500px
+  margin: auto
+  margin-bottom: 50px
+
+  *
+    text-align: center
+
+  button
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-inline: 16px
+    gap: 16px
+    color: white
+    background-color: green
+    border: none
+    box-shadow: 1px 1px 8px #9fb5
+
+    &:hover
+      color: green
+      background-color: white
+
+  .form-input
+    background-color: transparent
+    padding: 10px 0
+    border-bottom: 0.5px white solid
+
+  @media screen and (min-width: 600px)
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 0 50px
+    max-width: unset
+    padding-inline: 30px
+    max-width: 1000px
+    margin: auto
+
+    a
+      grid-row-start: 1
+      place-self: flex-end
+
+    h3
+      grid-row-start: 2
+      grid-column-start: 1
+
+    form
+      grid-row-start: 1
+      grid-row-end: 3
+      grid-column-start: 2
+
+    .form-submit
+      width: 35%
+      margin: auto
+      border: 1px solid white

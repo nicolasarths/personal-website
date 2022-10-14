@@ -1,0 +1,46 @@
+.project
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 34px
+
+    max-width: 1000px
+    padding-bottom: 20px
+
+    text-align: center
+
+    border-bottom: 2px var(--background-color) solid
+
+    img
+        height: fit-content
+        width: 100%
+        object-fit: contain
+        max-width: 500px
+
+    h3
+        margin-block: 32px 0
+        font-size: clamp(1.3rem, 5vw, 2rem)
+
+    .left
+        display: flex
+        align-items: center
+        flex-flow: column
+        max-width: 500px
+        margin-bottom: 42px
+
+        li
+            margin-block: 10px
+            max-width: 300px
+
+    @media only screen and (max-width: 1300px)
+        flex-flow: column
+        justify-content: center
+        align-items: center
+        gap: 0
+
+        button
+            max-width: 120px
+            margin: 10px
+
+        img
+            order: -1

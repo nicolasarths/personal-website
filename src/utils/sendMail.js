@@ -1,7 +1,7 @@
 import formatEmail from "./formatEmail";
 
-const sendFormToMyMail = async (form, receivedSubject) => {
-  const { subject, body, html } = formatEmail(form, receivedSubject);
+const sendFormToMyMail = async (currentTargetElements, receivedSubject) => {
+  const { subject, body, html } = formatEmail(currentTargetElements, receivedSubject);
   const response = await fetch("/api/mail", {
     method: "post",
     body: JSON.stringify({

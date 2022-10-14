@@ -1,14 +1,13 @@
-const Paper = ({children, color, shadowColor, gap, ...props}) => {
-    const styles = {
-        backgroundColor: color ? color : undefined,
-        boxShadow: shadowColor ? "5px -5px "+shadowColor : undefined,
-        gap: gap ? gap : undefined
-    }
-    return (
-        <div className="paper" style={styles} {...props}>
-            {children}
-        </div>
-    )
-}
+import styles from "./Paper.module.sass";
+
+const Paper = ({ className, children, ...props }) => {
+  const getClasses = styles.paper + " " + className;
+
+  return (
+    <div className={getClasses} {...props}>
+      {children}
+    </div>
+  );
+};
 
 export default Paper;

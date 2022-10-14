@@ -1,13 +1,15 @@
-const Section = ({ name, color, textColor, children }) => {
+import styles from "./Section.module.sass"
+
+const Section = ({ color, textColor, children, ...props }) => {
   return (
     <section
-      id={name}
-      name={name}
+      className={styles.section}
       style={{
         color: textColor ? textColor : undefined,
-        backgroundColor: color ? color : "var(--background-color)",
-        width: "100%",
+        backgroundColor: color ? color : undefined,
+        ...props.style
       }}
+      {...props}
     >
       {children}
     </section>

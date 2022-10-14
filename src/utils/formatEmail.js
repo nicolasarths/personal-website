@@ -1,11 +1,11 @@
 import { v4 } from "uuid";
 
-const formatEmail = (form, subject) => {
+const formatEmail = (currentTargetElements, subject) => {
   let html = "";
   let body = "";
   let mailto = "";
 
-  Array.from(form).forEach((field) => {
+  Array.from(currentTargetElements).forEach((field) => {
     if (!field.name) return;
     body += `${field.name}: ${field.value}; `;
     html += `<strong>${field.name}</strong>: ${field.value} <br/>`;

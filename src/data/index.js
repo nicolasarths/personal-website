@@ -1,9 +1,11 @@
 import { carouselImages } from "./carouselImages";
 import { navOptions } from "./navOptions";
-import { buttonsToDemo } from "./DevelopPage/buttonsToDemo";
+import { articles } from "./blog"
+import { projects } from "./DevelopPage"
 
 export {
   carouselImages,
   navOptions,
-  buttonsToDemo
+  projects,
+  articles
 }

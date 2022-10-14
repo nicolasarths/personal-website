@@ -9,8 +9,18 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/projetos',
+        destination: '/dev/desenvolver#projetos',
+        permanent: true
+      }
     ]
   },
+  experimental: {
+    images: {
+        allowFutureImage: true
+    }
+  }
 }
 
 module.exports = nextConfig

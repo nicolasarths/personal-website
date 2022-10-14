@@ -6,13 +6,15 @@ const Field = ({
   placeholder,
   autoFocus,
   required,
-  onChange
+  onChange,
+  detail,
 }) => {
   return (
     <div className="field">
       <label className="bold size-18" form={form} htmlFor={name}>
         {label}
-      </label>
+      </label><br/>
+      <span>{detail}</span>
       <input
       className="form-input"
         id={name}

@@ -1,37 +1,41 @@
 .attention, .organize
-    max-width: 1200px
+    max-width: 900px
     margin: auto
     padding: 56px 20px
     font-size: 20px
+    justify-content: center
 
     img
         object-fit: cover
         max-height: 300px
-        
+
     button
         justify-self: flex-end
 
     @media screen and (min-width: 900px)
         display: flex
+        margin-block: 30px
 
 .attention
+    background-color: #cad0d0
+
     button
+        color: #fff
+        background-color: #010110
         padding: 32px
         font-size: 16px
         text-align: left
-        background-color: #cad0d0
-        color: #000
 
         &:hover
-            color: #fff
-            background-color: #010110
+            color: #010110
+            background-color: #fff
 
     @media screen and ( min-width: 1000px )
         p
             max-width: 600px
-        
 
 .organize
+    background-color: #001
     color: white
 
     h3
@@ -45,5 +49,3 @@
         &:hover
             background-color: white
             color: black
-
-    

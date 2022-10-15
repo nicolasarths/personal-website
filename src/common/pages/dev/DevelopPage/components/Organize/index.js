@@ -9,33 +9,31 @@ import styles from "../SharedStyles.module.sass";
 
 const DevelopPageOrganize = () => {
   return (
-    <Section color="#001">
-      <div className={styles.organize}>
-        <TextAndImage
-          alternate
-          text={() => (
-            <>
-              <div>
-                <h3>Ou para organizar</h3>
-                <p>
-                  E instruir seus clientes, alavancando sua capacidade de
-                  converter acessos em bons negócios.
-                </p>
-              </div>
-              <DeepButton onClick={() => (location.href = "#contatar")}>
-                Vamos conversar?
-              </DeepButton>
-            </>
-          )}
-          image={() => (
-            <Img
-              src={image}
-              alt="organized folders, one has a label saying madonna"
-            />
-          )}
-        />
-      </div>
-    </Section>
+    <div className={styles.organize}>
+      <TextAndImage
+        alternate
+        text={() => (
+          <>
+            <div>
+              <h3>Ou para organizar</h3>
+              <p>
+                E instruir seus clientes, alavancando sua capacidade de
+                converter acessos em bons negócios.
+              </p>
+            </div>
+            <DeepButton onClick={() => (location.href = "#contatar")}>
+              Vamos conversar?
+            </DeepButton>
+          </>
+        )}
+        image={() => (
+          <Img
+            src={image}
+            alt="organized folders, one has a label saying madonna"
+          />
+        )}
+      />
+    </div>
   );
 };
 

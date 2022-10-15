@@ -6,7 +6,7 @@ import {
   Attention,
   Organize,
   Contact,
-  Possibilities
+  Explore
 } from "./components";
 import styles from "./DevelopPage.module.sass";
 
@@ -15,7 +15,7 @@ const DevelopPage = () => {
     <div className={styles.develop}>
       <Header />
       <Projects />
-      <Possibilities />
+      <Explore />
       <Features />
       <Attention />
       <Organize />

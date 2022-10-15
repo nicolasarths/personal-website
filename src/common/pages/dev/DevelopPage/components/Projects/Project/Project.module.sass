@@ -4,12 +4,25 @@
     align-items: center
     gap: 34px
 
+    background-color: var(--background-inversion)
+    color: var(--color-inversion)
+    font-weight: 400
+    padding: 40px
+
     max-width: 1000px
     padding-bottom: 20px
 
     text-align: center
 
     border-bottom: 2px var(--background-color) solid
+
+    button
+        width: fit-content
+        color: var(--button-color-inversion)
+        background-color: var(--button-background-inversion)
+
+        &:hover
+            background-color: var(--button-hover-inversion)
 
     img
         height: fit-content
@@ -40,7 +53,6 @@
 
         button
             max-width: 120px
-            margin: 10px
 
         img
             order: -1

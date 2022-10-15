@@ -3,14 +3,12 @@
 
 .projects
     display: flex
-    width: 100%
+    width: fit-content
+    margin: auto
     flex-flow: column nowrap
     align-items: center
     padding-block: 62px
-    background-color: var(--background-inversion)
-    color: var(--background-color)
     gap: 30px
-    
 
     img
         height: fit-content
@@ -20,15 +18,18 @@
         &::after 
             @extend .small-underline
             background-color: var(--background-color)
+            background-blend-mode: multiply(200%)
             width: 35%
             height: 3px
             bottom: -5px
     
-    .container
-        background-color: #fa08
-        border-color: #0004
+    .disclaimer
+        color: var(--disclaimer-color-inversion)
+        background-color: var(--disclaimer-background-inversion)
+        border-color: var(--disclaimer-border-inversion)
         text-align: center
+        width: 97%
+        margin-inline: 10px
 
         @media screen and ( min-width: 1300px  )
-            max-width: 1300px
             text-align: center

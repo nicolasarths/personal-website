@@ -16,7 +16,7 @@ const Projects = () => {
       <div className={styles.projects} id="projetos">
         <h2 className={styles.intermission}>Projetos concluídos</h2>
         <DisplayedProjects />
-        <Disclaimer className={styles.container} text="Novos projetos chegando em breve." />
+        <Disclaimer className={styles.disclaimer} text="Novos projetos chegando em breve." />
       </div>
   );
 };

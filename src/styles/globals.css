@@ -3,20 +3,33 @@
 :root {
   --background-color: #000429;
   --background-soft: #0b1353;
-  --background-inversion: #fd5;
-
+  --background-inversion: #ffde5a;
+  
   --primary-color: #ffde5a;
   --secondary-color: #e1e0f7;
-
+  --color-inversion: var(--background-color);
+  
   --main-color: var(--primary-color);
-
+  
   --button-color: #004;
-  --button-background-color: #fc4;
+  --button-background-color: #ffde5a;
   --button-hover: #fd6;
+  --button-color-inversion: #fff;
+  --button-background-inversion: #03b;
+  --button-hover-inversion: #4af;
   
   --highlight: #0caa58;
   --weak-highlight: #73efaf;
-  
+
+  --disclaimer-background: #fff3;
+  --disclaimer-color: #fff;
+  --disclaimer-border: #fff5;
+  --disclaimer-color-inversion: #fff;
+  --disclaimer-background-inversion: #03bc;
+  --disclaimer-border-inversion: #0003;
+
+  --paper-background: var(--button-background-color);
+
   --success: #008000;
   --failure: #ff0000;
   
@@ -223,13 +236,13 @@ label:hover {
 
 .highlight { color: var(--highlight) }
 .inline-highlight-dark {
-  color: var(--secondary-color);
+  color: #fff;
   background-color: var(--background-color);
   padding: 3px 10px;
   border-radius: 20px;
   text-transform: uppercase;
   font-size: .8em;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 

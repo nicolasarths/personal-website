@@ -1,9 +1,9 @@
-import styles from "./Possibilities.module.sass";
+import styles from "./Explore.module.sass";
 import Section from "components/Section";
 
-const Possibilities = () => {
+const Explore = () => {
   return (
-    <div id="explorar" className={styles.possibilities}>
+    <div id="explorar" className={styles.explore}>
       <h2 className={styles.intermission}>
         Vamos explorar algumas possibilidades?
       </h2>
@@ -15,4 +15,4 @@ const Possibilities = () => {
   );
 };
 
-export default Possibilities;
+export default Explore;

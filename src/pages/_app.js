@@ -3,6 +3,8 @@ import Layout from "components/Layout";
 import { WindowAlertProvider } from "context/windowAlert";
 import { navOptions } from "data";
 
+import { GoogleAnalyticsComponent } from "common/features/googleAnalytics"
+
 import "../styles/animations/index.css";
 import "../styles/index.css";
 import "styles/index.sass"
@@ -20,6 +22,7 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <Component {...pageProps} />
       </Layout>
+      <GoogleAnalyticsComponent/>
     </WindowAlertProvider>
   );
 }

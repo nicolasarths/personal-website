@@ -1,7 +1,7 @@
-import electronics from "../../public/carousel-example/electronics.jpg";
-import restaurant from "../../public/carousel-example/restaurant.jpg";
-import justice from "../../public/carousel-example/justice.jpg";
-import graphics from "../../public/carousel-example/graphics.jpg";
+import electronics from "./assets/electronics.jpg";
+import restaurant from "./assets/restaurant.jpg";
+import justice from "./assets/justice.jpg";
+import graphics from "./assets/graphics.jpg";
 
 export const carouselImages = [
   {

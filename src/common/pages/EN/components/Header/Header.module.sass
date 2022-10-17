@@ -1,0 +1,48 @@
+.header
+    margin: auto
+    max-width: 500px
+    height: 97vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    h1
+        font-family: Playfair Display
+        font-size: 3rem
+        text-align: center
+        text-transform: uppercase
+        text-decoration: underline
+        text-underline-offset: 10px
+        margin: 0
+
+    p
+        max-width: 300px
+        margin: 20px auto
+        text-align: center
+    .menu
+        display: flex
+        flex-direction: column
+        justify-content: center
+        gap: 10px
+        text-align: center
+        margin-top: 10px
+
+        li
+            list-style: none
+            p
+                margin: 0
+        a
+            background: linear-gradient(to right, white, #fd0, white)
+            animation: rainbow-animation linear infinite
+
+            font-weight: 600
+            -webkit-text-fill-color: transparent
+            -webkit-background-clip: text
+            animation-duration: 700s
+
+            @keyframes rainbow-animation
+                to
+                    background-position: 4500vh
+
+            &:hover
+                color: var(--highlight)

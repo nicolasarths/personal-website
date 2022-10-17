@@ -1,17 +1,12 @@
-import profilePicture from "assets/homepage/profile-picture.jpg";
-import Img from "components/Img";
 import Link from "next/link";
+import LanguageSwitcher from "common/features/language/components/LanguageSwitcher"
 
 import styles from "./Header.module.sass";
 
 const Header = () => {
   return (
     <div className={styles.header}>
-      <Img
-        className={"fade-in " + styles.Img}
-        src={profilePicture}
-        alt="Nícolas Arths"
-      />
+      <LanguageSwitcher lang="en"/>
       <div className={styles.text}>
         <h1>
           Nícolas <strong>Arths</strong>

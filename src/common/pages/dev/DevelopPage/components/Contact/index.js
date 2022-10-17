@@ -73,7 +73,7 @@ const DevelopPageContact = () => {
             rows="1"
             required
           />
-          <Submit />
+          <Submit className={styles.submit} />
         </Form>
       </div>
     </Section>

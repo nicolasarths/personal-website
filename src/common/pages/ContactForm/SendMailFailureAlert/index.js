@@ -8,10 +8,18 @@ const SendMailFailureAlert = ({ form, subject }) => {
     subject,
     fields
   );
+
+  const failureMessage =
+    lang === "en" ? "Failed to send message" : "Falha no envio da mensagem.";
+  const alternative =
+    lang === "en"
+      ? "Send with your email app"
+      : "Enviar pelo seu aplicativo e-mail preferido?";
+
   return (
     <span>
-      Falha no envio da mensagem.{" "}
-      <a href={href}>Enviar pelo seu aplicativo e-mail preferido?</a>
+      {failureMessage}
+      <a href={href}>{alternative}</a>
     </span>
   );
 };

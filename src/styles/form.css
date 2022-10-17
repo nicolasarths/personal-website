@@ -35,21 +35,6 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
-.form-submit {
-  font-weight: 700;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 30px;
-
-  background-color: inherit;
-}
-
-.form-submit:hover {
-  color: white;
-  background-color: black;
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 600px) {
   .form{
     margin: 0 30px;

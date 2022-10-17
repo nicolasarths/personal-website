@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.container}>
-        <h1>Get in touch</h1>
+        <h2>Get in touch</h2>
       <Form onSubmit={handleSubmit}>
         <Field
           label="Your name"

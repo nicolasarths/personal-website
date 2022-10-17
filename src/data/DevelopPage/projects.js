@@ -1,5 +1,5 @@
-import monteiroImage from "./assets/Monteiro.png"
-import organoImage from "./assets/organo.png"
+import monteiroImage from "./assets/Monteiro.png";
+import organoImage from "./assets/organo.png";
 
 const projects = [
   {
@@ -20,6 +20,10 @@ const projects = [
       "Botão flutuante para whatsapp em telas pequenas",
     ],
     github: "https://github.com/nicolasarths/monteiro",
+    en: {
+      description:
+        'NextJs website made for Brazilian towing services company "Monteiro Guincho de Moto".',
+    },
   },
   {
     title: "ORGANO",
@@ -36,11 +40,11 @@ const projects = [
       "Design",
     ],
     github: "https://github.com/nicolasarths/organo",
+    en: {
+      description:
+        'Card creator built with Brazilian programming school "Alura Cursos Online"',
+    },
   },
-  {},
-  {},
-  {},
-  {},
 ];
 
 export default projects;

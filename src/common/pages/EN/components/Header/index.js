@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { hrefs } from "data";
 
 import styles from "./Header.module.sass";
@@ -14,8 +13,6 @@ const Header = () => (
       <a href="#contact">Get in touch</a>
       <a href="#projects">Latest projects</a>
       <a href={hrefs.GITHUB_PROFILE}>Github</a>
-      <a href="#resume">Resume</a>
-      <Link href={hrefs.HOMEPAGE}>PT-BR</Link>
     </div>
   </div>
 );

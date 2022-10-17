@@ -1,0 +1,45 @@
+.about
+    max-width: 500px
+
+    padding: 20px
+    margin: auto
+
+    text-align: justify
+    letter-spacing: 1px
+
+    img
+        object-fit: cover
+        object-position: top
+
+    p
+        font-size: 1.05rem
+        line-height: 1.9em
+
+    h2
+        position: relative
+        font-size: 1.5rem
+        text-align: center
+
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: -10px
+            left: 50%
+            transform: translate(-50%,-50%)
+            width: 30px
+            height: 5px
+            background-color: var(--secondary-color)
+    
+    @media screen and ( min-width: 1000px )
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        max-width: 1000px
+        gap: 30px
+
+        img
+            grid-column-start: 2
+            grid-row-start: 1
+            grid-row-end: 4
+            scale: 80%
+        

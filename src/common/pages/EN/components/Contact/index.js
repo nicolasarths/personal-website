@@ -5,11 +5,6 @@ import { hrefs } from "data";
 import SendMailFailureAlert from "common/pages/ContactForm/SendMailFailureAlert";
 import { useContext } from "react";
 import { WindowAlertContext } from "context/windowAlert";
-import Section from "components/Section/index.js";
-import { SquareButton } from "components/Buttons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Spacer from "components/Spacer";
 import styles from "./Contact.module.sass";
 
 const Contact = () => {
@@ -19,7 +14,7 @@ const Contact = () => {
     e.preventDefault();
 
     const formElements = e.currentTarget.elements;
-    const budgetEmailSubject = `Requisição de orçamento ${v4()}`;
+    const budgetEmailSubject = `Message from the international landing page ${v4()}`;
 
     sendMail(
       formElements,
@@ -39,7 +34,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.container}>
-        <h2>Get in touch</h2>
+      <h2>Get in touch</h2>
       <Form onSubmit={handleSubmit}>
         <Field
           label="Your name"
@@ -55,14 +50,16 @@ const Contact = () => {
           placeholder="your@email.com"
           required
         />
-        <TextArea
-          name="message"
-          label="Your message"
-          placeholder="Let's talk?"
-          rows="5"
-          required
-        />
-        <Submit value="Send" />
+        <div className={styles.right}>
+          <TextArea
+            name="message"
+            label="Your message"
+            placeholder="Let's talk?"
+            rows="5"
+            required
+          />
+        </div>
+        <Submit className={styles.submit} value="Send" lang="en"/>
       </Form>
     </div>
   );

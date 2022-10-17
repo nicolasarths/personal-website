@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import { hrefs } from "data";
+
+import styles from "./Nav.module.sass";
+
 const Nav = ({ options }) => {
   const router = useRouter();
 
@@ -18,13 +22,15 @@ const Nav = ({ options }) => {
     );
   };
   return (
-    <span className="navbar">
-      <div className="menu">
-        {options.map(({ href, text }, i) => (
-          <NavItem key={i} href={href} text={text} />
-        ))}
-      </div>
-    </span>
+    <>
+      <span className="navbar">
+        <div className="menu">
+          {options.map(({ href, text }, i) => (
+            <NavItem key={i} href={href} text={text} />
+          ))}
+        </div>
+      </span>
+    </>
   );
 };
 

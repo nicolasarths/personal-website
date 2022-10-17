@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "./image.jpg";
+import image from "assets/PROFILE_PICTURE_SQUARE.jpg";
 import styles from "./WhoAmI.module.sass"
 
 const WhoAmI = () => {

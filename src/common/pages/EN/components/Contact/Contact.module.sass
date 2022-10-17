@@ -1,0 +1,19 @@
+@use "styles/variables/classes" as *
+
+.container
+    margin: auto
+    max-width: 500px
+    
+    *
+        text-align: center
+    
+    h1
+        position: relative
+        width: fit-content
+        margin: auto
+        margin-bottom: 32px
+        &::after
+            @extend .small-underline
+            bottom: -.2em
+            width: 30%
+            height: .12em

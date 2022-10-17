@@ -10,7 +10,7 @@ import { SquareButton } from "components/Buttons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Spacer from "components/Spacer";
-import styles from "./Contact.module.sass"
+import styles from "./Contact.module.sass";
 
 const Contact = () => {
   const { setWindowAlert } = useContext(WindowAlertContext);
@@ -38,34 +38,33 @@ const Contact = () => {
   };
 
   return (
-    <Section id="contato">
-      <div className={styles.container}>
-        <Form onSubmit={handleSubmit}>
-          <Field
-            label="Your name"
-            name="name"
-            type="text"
-            placeholder="Your Name"
-            required
-          />
-          <Field
-            label="Your email"
-            name="email"
-            type="email"
-            placeholder="your@email.com"
-            required
-          />
-          <TextArea
-            name="message"
-            label="Your message"
-            placeholder="Let's talk?"
-            rows="5"
-            required
-          />
-          <Submit value="Send" />
-        </Form>
-      </div>
-    </Section>
+    <div id="contact" className={styles.container}>
+        <h1>Get in touch</h1>
+      <Form onSubmit={handleSubmit}>
+        <Field
+          label="Your name"
+          name="name"
+          type="text"
+          placeholder="Your Name"
+          required
+        />
+        <Field
+          label="Your email"
+          name="email"
+          type="email"
+          placeholder="your@email.com"
+          required
+        />
+        <TextArea
+          name="message"
+          label="Your message"
+          placeholder="Let's talk?"
+          rows="5"
+          required
+        />
+        <Submit value="Send" />
+      </Form>
+    </div>
   );
 };
 

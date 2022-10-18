@@ -1,0 +1,28 @@
+.form
+    display: flex
+    flex-flow: column wrap
+    gap: 10px
+    max-width: 500px
+
+    label
+        margin-top: 10px
+
+.field span
+    font-size: .9em
+
+@media only screen and (max-width: 600px)
+.form
+    margin: 0 30px
+
+.input
+    background-color: black
+    color: white
+    font-size: 1.2rem
+    padding: 0.5em
+    margin-bottom: 10px
+    border: none
+    resize: none
+    max-width: 100%
+
+    input:-webkit-autofill, input:-webkit-autofill:focus
+        transition: background-color 600000s 0s, color 600000s 0s

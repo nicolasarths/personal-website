@@ -1,3 +1,5 @@
+import styles from "./Field.module.sass"
+
 const Field = ({
   form,
   label,
@@ -10,7 +12,7 @@ const Field = ({
   detail,
 }) => {
   return (
-    <div className="field">
+    <div className={styles.field}>
       <label className="bold size-18" form={form} htmlFor={name}>
         {label}
       </label><br/>

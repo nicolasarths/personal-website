@@ -9,6 +9,8 @@ import "../styles/animations/index.css";
 import "../styles/index.css";
 import "styles/index.sass"
 
+import "arthsy"
+
 import "../styles/components/index.css";
 
 import "styles/animations/fadeIn.sass"

@@ -22,7 +22,7 @@ const nextConfig = {
     },
   },
   i18n: {
-    locales: ["pt-br", "en"],
+    locales: ["pt-br"],
     defaultLocale: "pt-br",
   },
 };

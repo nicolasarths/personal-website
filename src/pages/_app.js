@@ -3,17 +3,17 @@ import Layout from "components/Layout";
 import { WindowAlertProvider } from "context/windowAlert";
 import { navOptions } from "data";
 
-import { GoogleAnalyticsComponent } from "common/features/googleAnalytics"
+import { GoogleAnalyticsComponent } from "common/features/googleAnalytics";
 
 import "../styles/animations/index.css";
 import "../styles/index.css";
-import "styles/index.sass"
+import "styles/index.sass";
 
-import "arthsy"
+import "arthsy";
 
 import "../styles/components/index.css";
 
-import "styles/animations/fadeIn.sass"
+import "styles/animations/fadeIn.sass";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -21,10 +21,11 @@ function MyApp({ Component, pageProps }) {
       <Layout menuOptions={navOptions}>
         <Head>
           <meta name="viewport" content="width=device-width" />
+          <title>Nícolas Arths</title>
         </Head>
         <Component {...pageProps} />
       </Layout>
-      <GoogleAnalyticsComponent/>
+      <GoogleAnalyticsComponent />
     </WindowAlertProvider>
   );
 }

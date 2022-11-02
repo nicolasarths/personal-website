@@ -5,22 +5,26 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/pt-br',
-        destination: '/',
+        source: "/pt-br",
+        destination: "/",
         permanent: true,
       },
       {
-        source: '/projetos',
-        destination: '/dev/desenvolver#projetos',
-        permanent: true
-      }
-    ]
+        source: "/projetos",
+        destination: "/dev/desenvolver#projetos",
+        permanent: true,
+      },
+    ];
   },
   experimental: {
     images: {
-        allowFutureImage: true
-    }
-  }
-}
+      allowFutureImage: true,
+    },
+  },
+  i18n: {
+    locales: ["pt-br", "en"],
+    defaultLocale: "pt-br",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

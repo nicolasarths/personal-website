@@ -2,9 +2,9 @@
 
 A responsive website, with sticky always visible header, contact form integrated with SendGrid's API and some CSS animations.
 
-## Live Demo: [PT-BR](https://nicolasarths.com.br) | [EN](https://nicolasarths.com.br/en)
+### Live Demo: [PT-BR](https://nicolasarths.com.br) | [EN](https://nicolasarths.com.br/en)
 
-### Highlights
+## Highlights
 
 [Highlighted animations](https://nicolasarths.com.br/dev/desenvolver)
 
@@ -17,11 +17,11 @@ A responsive website, with sticky always visible header, contact form integrated
 - [Font Awesome Icons](https://fontawesome.com/)
 - [Uuid](https://www.npmjs.com/package/uuid)
 
-Also:
-
 ## Want to collaborate?
 
 [Click here to find some issues](https://github.com/nicolasarths/personal-website/issues). Feel free to clone the project, make changes and then make a pull request.
+
+## Screenshots
 
 ![Nicolas Arths website screenshot](/public/demos/demo.png)
 

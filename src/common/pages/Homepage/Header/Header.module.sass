@@ -56,7 +56,7 @@
             color: var(--secondary-color)
             background-color: transparent
 
-            a, a::after
+            >a, >a::after
                 background: linear-gradient(to right, white, #fd0, white)
                 animation: rainbow-animation linear infinite
                 left: 50%
@@ -66,7 +66,7 @@
                     to
                         background-position: 4500vh
 
-            a
+            >a
                 width: fit-content
                 font-weight: 600
                 -webkit-text-fill-color: transparent
@@ -85,10 +85,37 @@
                     height: 1px
                     animation-duration: 2000s
 
-            a:hover
-                background: linear-gradient(to right, white, #fd0, #f60)
-                -webkit-text-fill-color: transparent
-                -webkit-background-clip: text
+                &:hover
+                    background: linear-gradient(to right, white, #fd0, #f60)
+                    -webkit-text-fill-color: transparent
+                    -webkit-background-clip: text
+            span
+                display: flex
+                position: absolute
+                left: 50%
+                transform: translate(-50%,-50%)
+                bottom: 20px
+
+                a
+                    position: relative
+                    font-size: .8rem
+                    padding: 4px
+
+                    &:hover
+                        background-color: var(--secondary-color)
+                        color: var(--color-inversion)
+
+                    &::after
+                        content: ""
+                        background-color: white
+                        display: block
+                        position: absolute
+                        bottom: 0px
+                        right: 0
+                        width: 25%
+                        height: 1px
+                        left: 50%
+                        transform: translate(-50%,-50%)
 
     @media screen and (min-width: 590px)
         display: flex

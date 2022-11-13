@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Layout from "components/Layout";
+import Layout from "common/layouts/MainLayout";
 import { WindowAlertProvider } from "context/windowAlert";
 import { navOptions } from "data";
 
 import { GoogleAnalyticsComponent } from "common/features/googleAnalytics";
 
 import "../styles/animations/index.css";
-import "../styles/index.css";
 import "styles/index.sass";
 
 import "arthsy";

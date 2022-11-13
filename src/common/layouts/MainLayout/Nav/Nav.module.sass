@@ -1,0 +1,27 @@
+.nav
+    .menu
+        display: inline-flex
+        flex-flow: row nowrap
+        justify-content: space-evenly
+        width: 100%
+
+        position: sticky
+        top: 0
+        z-index: 1
+
+        color: white
+        background-color: black
+
+        padding: 10px
+
+        animation: fade-in 2s
+
+        .option
+            font-size: clamp(1rem, 3vw, 1.5rem)
+
+            &:hover
+                color: var(--secondary-color)
+                cursor: pointer
+
+        .active
+            color: var(--main-color)

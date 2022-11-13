@@ -1,12 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { IOptions } from "..";
 
 import styles from "./Nav.module.sass";
-
-interface IOptions {
-  href: string;
-  text: string;
-}
 
 const Nav = ({ options }: { options: IOptions[] }) => {
   const router = useRouter();

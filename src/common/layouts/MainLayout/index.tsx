@@ -3,8 +3,13 @@ import React from "react";
 
 import styles from "./MainLayout.module.sass";
 
+export interface IOptions {
+  href: string;
+  text: string;
+}
+
 type LayoutProps = {
-  menuOptions: string;
+  menuOptions: IOptions[];
   children: any;
 };
 

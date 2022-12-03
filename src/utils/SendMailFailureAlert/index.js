@@ -10,16 +10,23 @@ const SendMailFailureAlert = ({ lang, form, subject }) => {
   );
 
   const failureMessage =
-    lang === "en" ? "Failed to send message. " : "Falha no envio da mensagem.";
+    lang === "en"
+      ? "Internal server error, it might be a good idea to "
+      : "Ocorreu algum problema no servidor, talvez seja melhor ";
   const alternative =
     lang === "en"
-      ? "Send with your favorite app?"
-      : "Enviar pelo seu aplicativo e-mail preferido?";
+      ? "try again with your favorite app "
+      : "tentar novamente pelo seu aplicativo de e-mail preferido ";
 
+  const continuation =
+    lang === "en"
+      ? "to ensure your message is delivered."
+      : "para garantir que sua mensagem seja entregue.";
   return (
     <span>
       {failureMessage}
       <a href={href}>{alternative}</a>
+      {continuation}
     </span>
   );
 };

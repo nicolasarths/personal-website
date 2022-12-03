@@ -1,3 +1,3 @@
 export const redirectTo = (href) => {
-    location.href = href
-}
+  location.href = href;
+};

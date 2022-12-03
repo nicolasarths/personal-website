@@ -1,25 +1,9 @@
 import { Field, Submit, TextArea, Form } from "components/forms";
-import { successfulContactPage } from "data/ContactPage";
 import { v4 } from "uuid";
-import { sendMail } from "utils";
 import { WindowAlertContext } from "context/windowAlert";
 import { useContext } from "react";
-import SendMailFailureAlert from "./SendMailFailureAlert";
 import Title from "components/Next/Title";
-
-const handleSubmit = (e, subject, setWindowAlert) => {
-  e.preventDefault();
-  const formElements = e.currentTarget.elements;
-  sendMail(
-    formElements,
-    subject,
-    () => (location.href = successfulContactPage),
-    () =>
-      setWindowAlert(
-        <SendMailFailureAlert form={formElements} subject={subject} />
-      )
-  );
-};
+import handleSubmit from "utils/handleSubmit";
 
 const ContactForm = () => {
   const { setWindowAlert } = useContext(WindowAlertContext);

@@ -2,10 +2,10 @@ import Header from "./Header";
 import LastArticles from "components/blog/LastArticles";
 import { articles } from "data";
 import About from "./About";
+import Projects from "components/displayers/ProjectsDisplayer";
 import Title from "components/Next/Title";
 
 import styles from "./Homepage.module.sass";
-import ContactForm from "common/pages/ContactForm";
 
 const Homepage = () => {
   return (
@@ -14,8 +14,8 @@ const Homepage = () => {
       <div className={styles.homepage}>
         <Header />
         <About />
-        {/* <LastArticles articles={articles}/>
-      <ContactForm whatsapp/> */}
+        {/* <LastArticles articles={articles}/>*/}
+        <Projects />
       </div>
     </>
   );

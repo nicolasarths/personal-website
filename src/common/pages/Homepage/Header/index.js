@@ -14,7 +14,7 @@ const Header = () => {
         </h1>
         <div className={styles.menu}>
           <a href="#about">Sobre</a>
-          <Link href="/dev/desenvolver/">Explorar</Link>
+          <Link href="#projects">Projetos</Link>
           <span>
             <a href={hrefs.PERSONAL_WEBSITE}>GH REPO</a>
           </span>

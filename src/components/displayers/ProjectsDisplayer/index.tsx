@@ -1,28 +1,12 @@
-import { projects, Project as IProject } from "data";
-import Image from "components/Img";
+import { projects, IProject } from "data";
 import styles from "./ProjectsDisplayer.module.sass";
-import { JSXElementConstructor } from "react";
+import Project from "./Project";
+import { type acceptedLanguages } from "common/features/language/acceptedLanguages";
 
-type ProjectProps = { project: IProject; expand?: boolean };
-
-const Project: JSXElementConstructor<ProjectProps> = ({ project, expand }) => {
-  return (
-    <div className={styles.project + " " + (expand ? styles.expand : "")}>
-      <h3>{project.title}</h3>
-      <div className={styles.menu}>
-        <a>Live view</a>
-        <a>Github repository</a>
-      </div>
-      <p>{project.description}</p>
-      <Image src={project.src} alt={project.alt} />
-    </div>
-  );
-};
-
-const renderProjects = (projects: IProject[]) => {
+const renderProjects = (projects: IProject[], lang: acceptedLanguages) => {
   const renderPairProjects = (projects: IProject[]) =>
     projects.map((project: IProject) => (
-      <Project project={project} key={project.id} />
+      <Project project={project} key={project.id} lang={lang} />
     ));
 
   const projectsArePair = projects.length / 2 === 0;
@@ -33,22 +17,25 @@ const renderProjects = (projects: IProject[]) => {
 
   renderedProjects.pop();
   renderedProjects.push(
-    <Project project={lastProject} key={lastProject.id} expand />
+    <Project project={lastProject} key={lastProject.id} expand lang={lang} />
   );
   return renderedProjects;
 };
 
-type ProjectsDisplayerProps = { lang?: string };
+type ProjectsDisplayerProps = { lang: acceptedLanguages };
 
 const ProjectsDisplayer = ({ lang }: ProjectsDisplayerProps) => {
-  const projectsToBeRendered =
-    lang === "en" ? projects.map((project) => project.en) : projects;
+  const projectsToBeRendered: IProject[] = projects;
 
+  const title = {
+    ptBr: "Projetos",
+    en: "Projects",
+  };
   return (
     <div id="projects" className={styles.container}>
-      <h2>Projetos Concluídos</h2>
+      <h2>{title[lang]}</h2>
       <div className={styles.projectsContainer}>
-        {renderProjects(projectsToBeRendered)}
+        {renderProjects(projectsToBeRendered, lang)}
       </div>
     </div>
   );

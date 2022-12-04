@@ -4,16 +4,23 @@ import Organo from "./Organo";
 
 import { StaticImageData } from "next/future/image";
 
+type MultipleLanguages = {
+  ptBr: string;
+  en: string;
+};
+
 export interface IProject {
-  title: string;
+  id: string;
+  title: MultipleLanguages;
   href: string;
-  imageSrc: StaticImageData;
-  description: string;
-  imageAlt: string;
+  localHref: string;
+  src: StaticImageData;
+  description: MultipleLanguages;
+  alt: string;
   features: string[];
-  githubRepository: string;
+  github: string;
 }
 
-const projects = [Monteiro, Organo, PersonalWebsite];
+const projects = [PersonalWebsite, Monteiro, Organo];
 
 export default projects;

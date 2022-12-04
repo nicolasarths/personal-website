@@ -1,22 +1,24 @@
 .container
     max-width: 1000px
     margin: 60px auto
+    padding: 3px
     display: flex
     flex-direction: column
     align-items: center
+    text-align: center
 
     h2
         margin-top: 54px
 
     .projectsContainer
-        display: grid
-
-        grid-template-columns: 1fr 1fr
+        display: flex
         flex-flow: column wrap
         gap: 30px
 
         @media screen and (min-width: 1000px)
             flex-flow: row
+            display: grid
+            grid-template-columns: 1fr 1fr
 
         .expand
             grid-column-start: 1

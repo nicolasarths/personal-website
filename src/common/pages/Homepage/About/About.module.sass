@@ -3,7 +3,6 @@
 
     padding: 20px
     margin: 0
-    margin-bottom: 162px
 
     text-align: justify
     letter-spacing: 1px
@@ -62,3 +61,23 @@
 
             @media screen and (max-width: 350px)
                 font-size: .8rem
+
+    @media screen and ( min-width: 1000px )
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        max-width: 1000px
+        gap: 30px
+        align-items: center
+
+        .text
+            grid-row-start: 1
+            grid-row-end: 4
+        h2
+            text-align: left
+            &::after
+                left: 0
+                transform: none
+        img
+            grid-row-start: 1
+            grid-row-end: 4
+            scale: 80%

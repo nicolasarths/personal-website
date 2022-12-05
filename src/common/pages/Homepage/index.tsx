@@ -1,8 +1,8 @@
 import Header from "./Header";
 import LastArticles from "components/blog/LastArticles";
 import { articles } from "data";
-import About from "./About";
-import Projects from "components/displayers/ProjectsDisplayer";
+import About from "./About/index";
+import ProjectsDisplayer from "components/displayers/ProjectsDisplayer";
 import Title from "components/Next/Title";
 
 import styles from "./Homepage.module.sass";
@@ -15,7 +15,7 @@ const Homepage = () => {
         <Header />
         <About />
         {/* <LastArticles articles={articles}/>*/}
-        <Projects />
+        <ProjectsDisplayer lang="ptBr" />
       </div>
     </>
   );

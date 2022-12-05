@@ -2,10 +2,10 @@ import LanguageSwitcher from "common/features/language/components/LanguageSwitch
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
-import Projects from "./components/Projects";
 import Title from "components/Next/Title";
 
 import styles from "./EN.module.sass";
+import ProjectsDisplayer from "components/displayers/ProjectsDisplayer/";
 
 const EN = () => (
   <>
@@ -14,7 +14,7 @@ const EN = () => (
       <LanguageSwitcher lang="pt-br" />
       <Header />
       <About />
-      <Projects />
+      <ProjectsDisplayer lang="en" />
       <Contact />
     </div>
   </>

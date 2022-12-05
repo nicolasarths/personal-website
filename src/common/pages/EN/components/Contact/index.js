@@ -2,7 +2,7 @@ import { Form, Field, Submit, TextArea } from "components/forms";
 import { v4 } from "uuid";
 import { sendMail, redirectTo } from "utils";
 import { hrefs } from "data";
-import SendMailFailureAlert from "common/pages/ContactForm/SendMailFailureAlert";
+import SendMailFailureAlert from "utils/SendMailFailureAlert";
 import { useContext } from "react";
 import { WindowAlertContext } from "context/windowAlert";
 import styles from "./Contact.module.sass";
@@ -59,7 +59,7 @@ const Contact = () => {
             required
           />
         </div>
-        <Submit className={styles.submit} value="Send" lang="en"/>
+        <Submit className={styles.submit} value="Send" lang="en" />
       </Form>
     </div>
   );

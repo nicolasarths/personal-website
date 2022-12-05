@@ -1,6 +1,5 @@
 import Section from "components/Section";
 import {
-  Projects,
   Header,
   Features,
   Attention,
@@ -9,6 +8,7 @@ import {
   Explore,
 } from "./components";
 import Title from "components/Next/Title";
+import ProjectsDisplayer from "components/displayers/ProjectsDisplayer";
 
 import styles from "./DevelopPage.module.sass";
 
@@ -18,7 +18,7 @@ const DevelopPage = () => {
       <Title title="Nícolas Arths - Vamos construir algo incrível juntos?" />
       <div className={styles.develop}>
         <Header />
-        <Projects />
+        <ProjectsDisplayer lang="ptBr" />
         <Explore />
         <Features />
         <Attention />

@@ -2,7 +2,7 @@ import { Form, Field, Submit, TextArea } from "components/forms";
 import { v4 } from "uuid";
 import { sendMail, redirectTo } from "utils";
 import { successfulContactPage } from "data/hrefs";
-import SendMailFailureAlert from "common/pages/ContactForm/SendMailFailureAlert";
+import SendMailFailureAlert from "utils/SendMailFailureAlert";
 import { useContext } from "react";
 import { WindowAlertContext } from "context/windowAlert";
 import Section from "components/Section/index.js";
@@ -10,7 +10,7 @@ import { SquareButton } from "components/Buttons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Spacer from "components/Spacer";
-import styles from "./Contact.module.sass"
+import styles from "./Contact.module.sass";
 
 const DevelopPageContact = () => {
   const { setWindowAlert } = useContext(WindowAlertContext);
@@ -38,7 +38,7 @@ const DevelopPageContact = () => {
 
   return (
     <Section id="contatar">
-      <Spacer height="50px"/>
+      <Spacer height="50px" />
       <div className={styles.container}>
         <a
           href="https://wa.me/051984376635"

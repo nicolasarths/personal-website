@@ -1,6 +1,6 @@
 import { Button } from "components/Buttons";
 import { hrefs } from "data";
-import Link from "next/link";
+import Link from "components/Next/Link";
 import Title from "components/Next/Title";
 
 import styles from "./ContactSuccess.module.sass";

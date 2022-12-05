@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "components/Next/Link";
 import { useRouter } from "next/router";
 
 import { hrefs } from "data";

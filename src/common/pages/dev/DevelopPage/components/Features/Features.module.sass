@@ -5,18 +5,31 @@
   margin: 62px auto
   padding: 10px
 
+  .possibilities
+    font-size: 1.3rem
+    letter-spacing: .2rem
+    line-height: 2rem
+    text-align: justify
+    p
+      margin-block: 0 2rem
+    button
+      border-radius: 0
+      padding: 20px
+      text-transform: uppercase
+      font-weight: 700
+
   *
     max-width: 800px
     margin: auto
 
   .carousel, .carousel *
     max-width: unset
-  
+
   .carousel
     padding: 0
     width: 100%
     max-width: 1500px
-    
+
   h3
     padding: 0 20px
     font-size: 1.7rem
@@ -25,7 +38,7 @@
     display: grid
     grid-template-columns: 1fr
     justify-items: center
-    gap: 20px 
+    gap: 20px
 
     button
       width: 90%
@@ -35,7 +48,7 @@
       animation-iteration-count: infinite
 
     @media screen and ( min-width: 430px )
-      grid-template-columns: repeat(2, 1fr)    
-    
+      grid-template-columns: repeat(2, 1fr)
+
     @media screen and ( min-width: 700px )
-      grid-template-columns: repeat(3, 1fr)    
+      grid-template-columns: repeat(3, 1fr)

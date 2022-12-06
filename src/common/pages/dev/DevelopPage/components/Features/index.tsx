@@ -38,6 +38,31 @@ const buttonsToDemo = [
 const Features = () => {
   return (
     <div className={styles.components}>
+      <div className={styles.possibilities}>
+        <h2 className="text-center padding-bottom-medium">
+          Desenvolvimento de Websites
+        </h2>
+        <p>
+          Quando pensamos em desenvolver websites, é preciso ter certeza de
+          estar atuando ao lado de um desenvolvedor de{" "}
+          <strong>confiança</strong>, que esteja ciente da necessidade de se
+          utilizarem ferramentas <strong>seguras</strong> e atualizadas que
+          atendam as suas necessidades.
+        </p>
+        <p>
+          Como construtor de websites totalmente responsivos, que contam com
+          velocidade e design, utilizando-se da programação verdadeira, tenho a
+          capacidade de atender as suas demandas e construir as interfaces que
+          você precisa para fazer o seu projeto brilhar.
+        </p>
+        <p>
+          Desde carrosséis de imagens até botões animados, análise de tráfego
+          com o Google Analytics e integração com ferramentas de e-mail, estou
+          esperando por você para que possamos trabalhar juntos em busca do
+          sucesso!
+        </p>
+        <Button type="colorChanger">Entrar em contato</Button>
+      </div>
       <h2 className="size-32">Componentes</h2>
       <p className="text-justify">
         Está procurando por novos elementos para preencher a sua página web?

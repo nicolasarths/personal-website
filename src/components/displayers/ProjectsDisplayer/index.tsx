@@ -33,6 +33,7 @@ const ProjectsDisplayer = ({ lang }: ProjectsDisplayerProps) => {
   };
   return (
     <div id="projects" className={styles.container}>
+      <span id="projetos"></span>
       <h2>{title[lang]}</h2>
       <div className={styles.projectsContainer}>
         {renderProjects(projectsToBeRendered, lang)}

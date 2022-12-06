@@ -15,7 +15,6 @@ const Project: JSXElementConstructor<ProjectProps> = ({
   expand,
   lang,
 }) => {
-  console.log(lang);
   const text =
     lang === "en"
       ? {

@@ -4,17 +4,19 @@
   overflow: hidden;
   height: clamp(200px, 40vw, 600px);
   background-color: rgba(8, 0, 100, 0.3);
+  box-shadow: 0 0 30px #fff3;
+  border-radius: 5px;
 }
 
 .carousel img {
   object-fit: cover;
-  border: 2px white solid;
 }
 
 .carousel-nav-circles-background {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding: 6px 12px;
 
   background-color: rgba(5, 5, 112, 0.8);
 
@@ -28,7 +30,7 @@
 
   gap: 10px;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
 
   z-index: 3;
 }
@@ -57,13 +59,12 @@
   z-index: 2;
   top: 42%;
 
-  background-color: rgba(0, 38, 255, 0.3);
-  color: var(--primary-color);
+  background-color: #026;
+  color: white;
 
   font-size: clamp(0.8rem, 3vw, 1.4rem);
   padding: 5px;
   padding-inline: 10px;
-  margin: 5px;
 
   border-radius: 50%;
 
@@ -71,9 +72,9 @@
 }
 
 .carousel-left-arrow {
-  left: 0;
+  left: 5px;
 }
 
 .carousel-right-arrow {
-  right: 0;
+  right: 5px;
 }

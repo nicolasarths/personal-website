@@ -4,18 +4,20 @@ import NavCircles from "./NavCircles";
 import CarouselImages from "./CarouselImages";
 
 const Carousel = ({ images, className, ...props }) => {
-  const [currentImageId, setCurrentImageId] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = useCallback(() => {
-    setCurrentImageId((prev) => {
-      const nextId = prev + 1;
-      if (nextId === images.length) return 0;
-      return nextId;
+    setCurrentImageIndex((prev) => {
+      console.log("Current", prev);
+      const nextIndex = prev + 1;
+      console.log("Next", nextIndex);
+      if (nextIndex > images.length - 1) return 0;
+      return nextIndex;
     });
   }, [images]);
 
   const prevImage = () => {
-    setCurrentImageId((prev) => {
+    setCurrentImageIndex((prev) => {
       if (prev === 0) return images.length - 1;
       return prev - 1;
     });
@@ -32,15 +34,15 @@ const Carousel = ({ images, className, ...props }) => {
       <LeftArrow prevImage={prevImage} />
 
       <CarouselImages
-        key={images[currentImageId].id}
-        src={images[currentImageId].src}
-        alt={images[currentImageId].alt}
+        key={images[currentImageIndex].id}
+        src={images[currentImageIndex].src}
+        alt={images[currentImageIndex].alt}
       />
 
       <NavCircles
         ids={images.map(({ id }) => id)}
-        currentId={currentImageId}
-        onClick={setCurrentImageId}
+        currentId={currentImageIndex}
+        onClick={setCurrentImageIndex}
       />
 
       <RightArrow nextImage={nextImage} />

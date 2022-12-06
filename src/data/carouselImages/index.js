@@ -5,22 +5,22 @@ import graphics from "./assets/graphics.jpg";
 
 export const carouselImages = [
   {
-    id: 0,
+    index: 0,
     src: electronics,
     alt: "Imagem de exemplo com eletrônicos",
   },
   {
-    id: 1,
+    index: 1,
     src: restaurant,
     alt: "Imagem de exemplo de um restaurante",
   },
   {
-    id: 2,
+    index: 2,
     src: justice,
     alt: "Imagem de exemplo de advocacia",
   },
   {
-    id: 3,
+    index: 3,
     src: graphics,
     alt: "Imagem de exemplo de um planejamento com gráficos",
   },

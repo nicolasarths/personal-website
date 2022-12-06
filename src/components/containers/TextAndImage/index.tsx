@@ -1,6 +1,13 @@
-import styles from "./TextAndImage.module.sass"
+import { ReactNode } from "react";
+import styles from "./TextAndImage.module.sass";
 
-const TextAndImage = ({ text, image, alternate }) => {
+interface TextAndImageProps {
+  text: () => ReactNode;
+  image: () => ReactNode;
+  alternate?: boolean;
+}
+
+const TextAndImage = ({ text, image, alternate }: TextAndImageProps) => {
   if (!alternate)
     return (
       <div className={styles.container}>

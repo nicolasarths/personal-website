@@ -1,9 +1,14 @@
 import { useState, useEffect, useCallback } from "react";
 import { LeftArrow, RightArrow } from "./Arrows";
 import NavCircles from "./NavCircles";
-import CarouselImages from "./CarouselImages";
+import CarouselImages, { CarouselImagesProps } from "./CarouselImages";
 
-const Carousel = ({ images, className, ...props }) => {
+type CarouselProps = {
+  images: CarouselImagesProps[];
+  className?: string;
+};
+
+const Carousel = ({ images, className, ...props }: CarouselProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = useCallback(() => {
@@ -31,21 +36,22 @@ const Carousel = ({ images, className, ...props }) => {
 
   return (
     <div className={"carousel " + (className ? className : "")} {...props}>
-      <LeftArrow prevImage={prevImage} />
+      <LeftArrow nextIndex={prevImage} />
 
       <CarouselImages
-        key={images[currentImageIndex].id}
+        key={images[currentImageIndex].index}
+        index={images[currentImageIndex].index}
         src={images[currentImageIndex].src}
         alt={images[currentImageIndex].alt}
       />
 
       <NavCircles
-        ids={images.map(({ id }) => id)}
-        currentId={currentImageIndex}
+        indexes={images.map(({ index }) => index)}
+        currentIndex={currentImageIndex}
         onClick={setCurrentImageIndex}
       />
 
-      <RightArrow nextImage={nextImage} />
+      <RightArrow nextIndex={nextImage} />
     </div>
   );
 };

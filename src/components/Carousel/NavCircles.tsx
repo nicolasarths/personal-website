@@ -1,15 +1,21 @@
-const NavCircles = ({ ids, onClick, currentId }) => {
+type NavCirclesProps = {
+  indexes: number[];
+  onClick: (index: number) => void;
+  currentIndex: number;
+};
+
+const NavCircles = ({ indexes, onClick, currentIndex }: NavCirclesProps) => {
   return (
     <div className="carousel-nav-circles-container">
       <div className="carousel-nav-circles-background">
-        {ids.map((id) => (
+        {indexes.map((index) => (
           <span
             style={{ zIndex: 3 }}
-            key={id}
-            id={`circleForImage${id}`}
-            onClick={() => onClick(id)}
+            key={index}
+            id={`circleForImage${index}`}
+            onClick={() => onClick(index)}
             className={
-              currentId === id
+              currentIndex === index
                 ? "carousel-nav-circles active"
                 : "carousel-nav-circles"
             }

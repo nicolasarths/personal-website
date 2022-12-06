@@ -2,8 +2,7 @@ import { SquareButton } from "components/Buttons";
 import Paper from "components/blocks/Paper";
 import SvgContainer from "components/containers/SvgContainer";
 import icon from "./letter.svg";
-import WhoAmI from "./WhoAmI"
-import styles from "./Header.module.sass"
+import styles from "./Header.module.sass";
 
 const Header = () => {
   return (
@@ -27,9 +26,10 @@ const Header = () => {
         <p>
           Ficar sem um website hoje em dia é estar sem um cartão de visitas.
         </p>
-        <strong><a href="#contatar">Vamos consertar isso?</a></strong>
+        <strong>
+          <a href="#contatar">Vamos consertar isso?</a>
+        </strong>
       </Paper>
-      <WhoAmI/>
     </div>
   );
 };

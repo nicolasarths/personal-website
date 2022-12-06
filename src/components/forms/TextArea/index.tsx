@@ -1,4 +1,14 @@
-const TextArea = ({form, name, label, rows, placeholder, autoFocus, required }) => {
+import { PropsWithoutRef } from "react";
+
+const TextArea = ({
+  form,
+  name,
+  label,
+  rows,
+  placeholder,
+  autoFocus,
+  required,
+}: PropsWithoutRef<any>) => {
   return (
     <div className="field">
       <label className="bold size-18" form={form} htmlFor={name}>

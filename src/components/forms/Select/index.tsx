@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ChangeEvent, PropsWithoutRef, useState } from "react";
 
 const Select = ({
   label,
@@ -9,14 +9,14 @@ const Select = ({
   required,
   autoFocus,
   options,
-}) => {
+}: PropsWithoutRef<any>) => {
   const [currentSubject, setCurrentSubject] = useState(value);
 
-  const handleSelect = (e) => {
-    onChange ? onChange(e) : 0
-    
-    setCurrentSubject(e.target.value)
-  }
+  const handleSelect = (e: ChangeEvent<HTMLSelectElement>) => {
+    onChange ? onChange(e) : 0;
+
+    setCurrentSubject(e.target.value);
+  };
 
   return (
     <>
@@ -33,11 +33,13 @@ const Select = ({
         required={required}
         autoFocus={autoFocus}
       >
-        {options.map(({ value, id }, i) => (
-          <option key={i} value={id}>
-            {value}
-          </option>
-        ))}
+        {options.map(
+          ({ value, id }: { value: string; id: string }, i: number) => (
+            <option key={i} value={id}>
+              {value}
+            </option>
+          )
+        )}
       </select>
     </>
   );

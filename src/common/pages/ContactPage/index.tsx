@@ -1,9 +1,9 @@
 import { Field, Submit, TextArea, Form } from "components/forms";
-import { v4 } from "uuid";
 import { WindowAlertContext } from "context/windowAlert";
-import { useContext } from "react";
-import Title from "components/Next/Title";
 import handleSubmit from "utils/handleSubmit";
+import Title from "components/Next/Title";
+import { FormEvent, useContext } from "react";
+import { v4 } from "uuid";
 
 const ContactForm = () => {
   const { setWindowAlert } = useContext(WindowAlertContext);
@@ -17,9 +17,9 @@ const ContactForm = () => {
         <h1>Entre em contato...</h1>
 
         <Form
-          form="contactForm"
+          name="contactForm"
           method="post"
-          onSubmit={(e) => {
+          onSubmit={(e: FormEvent) => {
             handleSubmit(e, subject, setWindowAlert);
           }}
         >

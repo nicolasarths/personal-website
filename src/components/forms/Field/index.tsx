@@ -1,4 +1,5 @@
-import styles from "./Field.module.sass"
+import styles from "./Field.module.sass";
+import FormProps from "../FormProps";
 
 const Field = ({
   form,
@@ -10,15 +11,16 @@ const Field = ({
   required,
   onChange,
   detail,
-}) => {
+}: FormProps) => {
   return (
     <div className={styles.field}>
       <label className="bold size-18" form={form} htmlFor={name}>
         {label}
-      </label><br/>
+      </label>
+      <br />
       <span>{detail}</span>
       <input
-      className="form-input"
+        className="form-input"
         id={name}
         name={name}
         type={type}

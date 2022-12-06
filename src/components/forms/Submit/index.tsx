@@ -1,3 +1,4 @@
+import { PropsWithoutRef } from "react";
 import styles from "./Submit.module.sass";
 
 const message = {
@@ -13,14 +14,14 @@ const message = {
   dados para o e-mail de Nícolas Arths pertencem a terceiros.`,
 };
 
-const Disclaimer = ({ lang, form }) => (
+const Disclaimer = ({ lang, form }: PropsWithoutRef<any>) => (
   <div className={styles.disclaimer}>
     <input type={"checkbox"} form={form} required />
     {lang === "en" ? message.en : message["pt-br"]}
   </div>
 );
 
-const Submit = ({ lang, value, form, ...props }) => {
+const Submit = ({ lang, value, form, ...props }: PropsWithoutRef<any>) => {
   return (
     <div {...props}>
       <input

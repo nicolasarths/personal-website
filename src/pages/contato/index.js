@@ -1,2 +1,2 @@
-import ContactForm from "common/pages/ContactForm"
-export default ContactForm;
+import ContactPage from "common/pages/ContactPage";
+export default ContactPage;

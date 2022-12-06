@@ -3,6 +3,7 @@ import styles from "./Curriculum.module.sass";
 import { sendMail } from "utils";
 import { v4 } from "uuid";
 import Title from "components/Next/Title";
+import { FormEvent, HTMLAttributes } from "react";
 
 const curriculumHref =
   "https://drive.google.com/file/d/1y7yQppfdHuW38nlP48WCgvfzJsHfp8-c/view?usp=sharing/";
@@ -27,7 +28,7 @@ const curriculumOptions = [
 ];
 
 const CurriculumPage = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const formElements = e.currentTarget.elements;

@@ -1,4 +1,6 @@
-const Form = ({ name, method, onSubmit, children }) => {
+import FormProps from "../FormProps";
+
+const Form = ({ name, method, onSubmit, children }: FormProps) => {
   return (
     <form
       className="container-small"

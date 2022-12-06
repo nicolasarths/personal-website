@@ -1,6 +1,5 @@
 import Img from "components/Img";
 import Separator from "components/Separator";
-import Spacer from "components/Spacer";
 import Link from "components/Next/Link";
 import styles from "./About.module.sass";
 

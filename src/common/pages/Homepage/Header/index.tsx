@@ -16,7 +16,7 @@ const Header = () => {
           <a href="#about">Sobre</a>
           <a href="#projects">Projetos</a>
           <Link href="/dev/desenvolver">Desenvolvimento de Websites</Link>
-          <Link href="/blog">Blog</Link>
+          <a href="https://youtube.com/@nicolasarths">Youtube</a>
           <span>
             <a href={hrefs.PERSONAL_WEBSITE}>GH REPO</a>
           </span>

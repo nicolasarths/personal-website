@@ -1,0 +1,47 @@
+.container
+    $bg: var(--background-color)
+    position: relative
+    background: linear-gradient(280deg, $bg, #06B)
+    overflow: hidden
+
+    *
+        position: relative
+
+    &::before
+        content: ""
+        display: block
+
+        position: absolute
+        right: -100px
+        top: -100px
+
+        background: #05F
+        box-shadow: inset white 10px -10px 100px
+
+        width: 300px
+        height: 300px
+        border-radius: 50%
+
+    >h1
+        margin-block: 46px 0
+        text-align: center
+        text-shadow: 1px 1px 2px black
+        text-transform: uppercase
+
+    .menu
+        display: flex
+        margin: auto
+        width: fit-content
+        padding-block: 10px
+        gap: 2px
+
+        a
+            text-transform: uppercase
+            background-color: black
+            padding: 3px 12px
+            font-size: .9rem
+            font-weight: 500
+
+            &:hover
+                background-color: white
+                color: var(--background-color)

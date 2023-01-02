@@ -2,12 +2,14 @@ import { Button } from "components/Buttons";
 import WhatsappButton from "components/Buttons/WhatsappButton";
 import Img from "components/Img";
 import Link from "components/Next/Link";
+import Title from "components/Next/Title";
 import playlistImage from "./playlist-img.png";
 
 import styles from "./Teacher.module.sass";
 
 const Teacher = () => (
   <div className={styles.container}>
+    <Title title="Área Professor" />
     <h1>Área Professor</h1>
     <p>Olá.</p>
     <p>

@@ -24,7 +24,9 @@ const Teacher = () => (
     </p>
     <WhatsappButton>Mande uma mensagem no Whatsapp</WhatsappButton>
     <p className="text-center">ou</p>
-    <Button type="square">Envie sua mensagem pelo site</Button>
+    <Link href="/contato">
+      <Button type="square">Envie sua mensagem pelo site</Button>
+    </Link>
     <div className={styles.divisor}>
       <a
         href="https://www.youtube.com/playlist?list=PLUSHlk-nXpK_F9B8_fG5jhD2GBvAiXMek"

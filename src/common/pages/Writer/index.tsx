@@ -1,4 +1,5 @@
 import Title from "components/Next/Title";
+import Link from "components/Next/Link";
 import { Button } from "components/Buttons";
 
 import style from "./Writer.module.sass";
@@ -34,7 +35,9 @@ const Writer = () => (
       Em breve o blog e as poesias estarão também aqui neste website. Aguarde!
     </p>
 
-    <Button type="deep">Voltar para a página inicial</Button>
+    <Link href="/">
+      <Button type="deep">Voltar para a página inicial</Button>
+    </Link>
   </div>
 );
 export default Writer;

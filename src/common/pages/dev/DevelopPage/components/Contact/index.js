@@ -10,6 +10,8 @@ import { SquareButton } from "components/Buttons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Spacer from "components/Spacer";
+import WhatsappButton from "components/Buttons/WhatsappButton";
+
 import styles from "./Contact.module.sass";
 
 const DevelopPageContact = () => {
@@ -40,16 +42,7 @@ const DevelopPageContact = () => {
     <Section id="contatar">
       <Spacer height="50px" />
       <div className={styles.container}>
-        <a
-          href="https://wa.me/051984376635"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SquareButton className={styles.whatsappButton}>
-            <FontAwesomeIcon icon={faWhatsapp} style={{ height: "26px" }} />
-            Envie uma mensagem no whatsapp
-          </SquareButton>
-        </a>
+        <WhatsappButton>Envie uma mensagem no whatsapp</WhatsappButton>
         <h3 className="normal">ou vamos de e-mail</h3>
         <Form onSubmit={handleSubmit}>
           <Field

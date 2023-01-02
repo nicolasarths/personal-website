@@ -14,22 +14,24 @@ const About = () => {
         <div className={styles.text}>
           <h2>Sobre</h2>
           <p>
-            Sou Nícolas Arths. Aos vinte e cinco anos decidi me aventurar no
-            mundo da programação. Depois de um ano, desenvolvi diversos projetos
-            web, e procuro por formas de explorar novos horizontes. Você pode
-            fazer parte dessa jornada.
+            Olá, meu nome é Nícolas Arths. Eu sou desenvolvedor de websites,
+            professor de inglês, escritor e, agora, youtuber também! Este
+            website nasceu com o intuito de promover meu trabalho como
+            programador, mas o projeto está evoluindo bastante. Você pode
+            navegar pelos menus para encontrar aquilo que mais se encaixa em sua
+            busca.
           </p>
           <div className={styles.menu}>
-            <Link href="/dev/desenvolver">Vamos começar?</Link>
+            <Link href="/dev/desenvolver">Desenvolvimento Web</Link>
             <a
-              href="https://github.com/nicolasarths"
+              href="https://www.youtube.com/@nicolasarths"
               target="_blank"
               rel="noreferrer"
             >
-              Github
+              Youtube
             </a>
-            <Link href="/dev/curriculo">Currículo</Link>
-            <Link href="/contato">Contato</Link>
+            <Link href="/professor">Inglês</Link>
+            <Link href="/escritor">Escritor</Link>
           </div>
         </div>
       </div>

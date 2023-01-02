@@ -4,6 +4,7 @@ import styles from "./BlogPost.module.sass";
 
 export interface BlogPostProps {
   post: {
+    title: string;
     date: string;
     excerpt: string;
     href: string;

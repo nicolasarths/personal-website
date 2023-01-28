@@ -13,9 +13,7 @@ const Carousel = ({ images, className, ...props }: CarouselProps) => {
 
   const nextImage = useCallback(() => {
     setCurrentImageIndex((prev) => {
-      console.log("Current", prev);
       const nextIndex = prev + 1;
-      console.log("Next", nextIndex);
       if (nextIndex > images.length - 1) return 0;
       return nextIndex;
     });

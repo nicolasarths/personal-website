@@ -30,8 +30,8 @@ const Project: JSXElementConstructor<ProjectProps> = ({
     <div className={styles.project + " " + (expand ? styles.expand : "")}>
       <h3>{project.title[lang]}</h3>
       <div className={styles.menu}>
-        <a>{text.liveView}</a>
-        <a>{text.githubRepository}</a>
+        <a href={project.href}>{text.liveView}</a>
+        <a href={project.github}>{text.githubRepository}</a>
       </div>
       <p>{project.description[lang]}</p>
       <Image src={project.src} alt={project.alt} />

@@ -30,7 +30,12 @@ const Explore = () => {
           esperando por você para que possamos trabalhar juntos em busca do
           sucesso!
         </p>
-        <Button type="colorChanger">Entrar em contato</Button>
+        <Button
+          type="colorChanger"
+          onClick={() => (location.href = "#contatar")}
+        >
+          Entrar em contato
+        </Button>
       </div>
     </div>
   );

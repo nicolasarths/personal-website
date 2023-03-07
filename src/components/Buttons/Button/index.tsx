@@ -14,6 +14,7 @@ interface ButtonProps {
   className?: string;
   type?: acceptedTypes;
   style?: React.CSSProperties;
+  onClick?: () => any;
   props?: PropsWithoutRef<any> & ComponentPropsWithoutRef<any>;
 }
 

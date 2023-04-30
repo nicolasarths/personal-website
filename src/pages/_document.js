@@ -8,7 +8,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Playfair+Display:ital,wght@0,400;1,400;1,900&display=swap"
             rel="stylesheet"
           />
-          <link rel="shortcut icon" href="/victor-cortado.jpg" />
+          <link rel="shortcut icon" href="/victor-round.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"

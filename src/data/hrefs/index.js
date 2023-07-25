@@ -11,6 +11,7 @@ const hrefs = {
   ...locals,
   ...profiles,
   ...repositories,
+  WHATSAPP_BASE: "https://wa.me/51984376635",
 };
 
 export default hrefs;

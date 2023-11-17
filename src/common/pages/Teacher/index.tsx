@@ -4,24 +4,28 @@ import Img from "components/Img";
 import Link from "components/Next/Link";
 import Title from "components/Next/Title";
 import playlistImage from "./playlist-img.png";
+import banner from "./banner.png";
+import hrefs from "data/hrefs";
 
 import styles from "./Teacher.module.sass";
 
 const Teacher = () => (
   <div className={styles.container}>
     <Title title="Área Professor" />
-    <h1>Área Professor</h1>
-    <p>Olá.</p>
-    <p>
-      Se você está buscando aprender ou mesmo aperfeiçoar o seu inglês,
-      encontrou o lugar certo para isso. Como professor de inglês, já ensinei
-      crianças e adultos e os ajudei, com meu método de ensino descontraído e
-      fácil de acompanhar, a darem largos passos em direção a suas fluências.
-    </p>
-    <p>
-      Se você está procurando por um professor, considere entrar em contato, e
-      podemos marcar uma aula experimental <strong>totalmente gratuita!</strong>
-    </p>
+    <h1>Curso Rumo À Fluência</h1>
+    <p>Aprenda inglês agora.</p>
+    <a
+      className={styles.banner}
+      href={hrefs.WHATSAPP_BASE}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Img
+        src={banner}
+        alt="R$240,00. 1 hora de aula semanal, vídeos complementares às aulas no Youtube, grupo de alunos no WhatsApp, material completo incluso na mensalidade."
+      />
+    </a>
+
     <WhatsappButton>Mande uma mensagem no Whatsapp</WhatsappButton>
     <p className="text-center">ou</p>
     <Link href="/contato">
@@ -40,8 +44,8 @@ const Teacher = () => (
       </a>
       <div>
         <p>
-          Alternativamente, dê uma olhada na minha playlist de vídeos de inglês
-          no Youtube!
+          Alternativamente, dê uma olhada na playlist de vídeos do curso no
+          Youtube!
         </p>
         <a
           href="https://www.youtube.com/playlist?list=PLUSHlk-nXpK_F9B8_fG5jhD2GBvAiXMek"

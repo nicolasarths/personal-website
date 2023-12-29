@@ -1,0 +1,40 @@
+.sobreOCurso
+
+    li
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 32px
+        margin-block: 16px
+
+        .augment
+            margin: 36px
+            font-size: 600%
+    ul
+        margin: 0
+        padding: 0
+        grid-template-columns: 1fr 1fr
+        list-style-type: none
+        margin-block-start: 0
+        margin-block-end: 0
+        margin-inline-start: 0
+        margin-inline-end: 0
+        padding-inline-start: 0
+
+    @media screen and (min-width: 800px)
+        position: relative
+
+        ul
+            display: grid
+            color: var(--secondary-color)
+
+            li
+                align-items: center
+                justify-content: center
+                font-size: .9rem
+                justify-self: center
+                align-self: center
+                width: 96.3%
+                height: 96%
+                border: 3px solid var(--secondary-color)
+                padding: 36px

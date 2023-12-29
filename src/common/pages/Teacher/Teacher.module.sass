@@ -2,18 +2,61 @@
     margin: auto
     max-width: 900px
     padding: 30px
-    text-align: center
+    text-align: justify
     line-height: 180%
+    font-size: 120%
 
-    button
-        &:not(:first-child)
-            background-color: black
-            color: white
-            padding: 18px
+    h2
+        margin-top: 64px
+        font-size: 200%
 
-    .banner img
-        max-width: 400px
-        margin-bottom: 24px
+    h3
+        font-size: 160%
+
+    h1, .menu
+        text-align: center
+
+    li
+        list-style: none
+
+    .menu
+        margin-top: 10px
+        margin-bottom: 32px
+
+        li
+            border: 1px solid var(--secondary-color)
+            padding: 10px
+            margin: 10px
+            &:hover
+                background-color: var(--secondary-color)
+                color: var(--color-inversion)
+                font-weight: 600
+
+        a
+            font-weight: 600
+
+            &:last-child
+                font-weight: 800
+                color: var(--highlight)
+
+                li
+                    &:hover
+                        background-color: var(--highlight)
+                        font-weight: 900
+                        border: 1px solid var(--highlight)
+
+    .blackButton
+        background-color: black
+        color: white
+        padding: 18px
+
+    .duvidas
+        margin-top: 64px
+
+        p
+            margin-bottom: 40px
+            text-align: center
+            font-size: 2rem
 
     .divisor
         display: grid

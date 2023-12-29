@@ -1,0 +1,71 @@
+.containerPlanos
+    display: grid
+    justify-items: center
+    .plano
+        background-color: var(--light-gray)
+        padding: 42px
+        margin-block: 26px
+        border-radius: 24px
+        font-size: 90%
+        color: black
+        width: 100%
+        max-width: 450px
+
+        ul
+            margin: 0
+            margin-block-start: 0
+            margin-block-end: 0
+            padding-inline-start: 10px
+            font-size: .95rem
+
+        h4
+            margin: 0
+            margin-bottom: 10px
+            font-size: 160%
+
+        .contrate
+            display: inline-block
+            text-decoration: none
+            background-color: #000
+            color: #fff
+            border: none
+            outline: none
+            padding: 1em 2em
+            text-transform: uppercase
+            font-weight: 700
+            letter-spacing: 1px
+            position: relative
+            margin-top: 2em
+            overflow: hidden
+
+            &:hover
+                background-color: #fff0
+                color: black
+                outline: black solid 2px
+            .shine
+                position: absolute
+                left: 0
+                top: 0
+                right: 0
+                bottom: 0
+                width: 100%
+                height: 100%
+                transform: skew(30deg) translateX(-120%)
+                background-color: rgba(255,255,255,0.3)
+                animation: shine 2s ease infinite
+
+            @keyframes shine
+                0%
+                    transform: skew(30deg) translateX(-120%)
+                30%
+                    transform: skew(30deg) translateX(120%)
+                100%
+                    transform: skew(30deg) translateX(120%)
+
+    @media screen and ( min-width:  800px)
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+        .plano
+            max-width: 94%
+            padding: 30px
